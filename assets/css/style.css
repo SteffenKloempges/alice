@@ -1,0 +1,613 @@
+@import url("//hello.myfonts.net/count/413a68");
+
+@font-face {
+    font-family: "HelveticaNowDisplayThin";
+    src: url('../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Thin.woff2');
+}
+
+@font-face {
+    font-family: "EuclidCircularA-Regular";
+    src: url('../fonts/Euclid/EuclidCircularA-Regular.otf');
+}
+
+
+/* ==========================
+        General
+============================*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*:before, *:after { 
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+h1,h2{
+    font-family: "EuclidCircularA-Regular";
+}
+
+h3, p, a, li, input, label{
+    font-family: "HelveticaNowDisplayThin";
+}
+
+h3{
+    font-size: 26px;
+}
+
+/* ==========================
+        Hero
+============================*/
+
+.hero{
+    background: linear-gradient(to bottom right, white, orange);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 5vw;
+    animation-name: animateBackground;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.hero-info{
+    display: flex;
+    align-items: baseline;
+    font-size: 30px;
+    font-family: "EuclidCircularA-Regular";
+}
+
+.hero-info p{
+    font-family: "EuclidCircularA-Regular";
+}
+
+.hero-info div{
+    padding-left: 30px;
+}
+
+.test{
+    width: 283px;
+    height: 32px;
+    overflow:hidden;
+}
+
+.hero i{
+    color: black;
+    font-size: 40px;
+    position: absolute;
+    bottom:20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ==========================
+        Slider
+============================*/
+
+.slider{
+    height: 100vh;
+    background: url("../img/Stage-Image.png") center bottom / cover no-repeat;
+    display:flex;
+    align-items: flex-end;
+}
+
+.slider .waitinglist-slider{
+    border-top: 1px solid white;
+    padding: 3vh 2vw;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider .waitinglist-slider p{
+    font-size: 36px;
+}
+
+.slider .waitinglist-slider i{
+    font-size: 40px;
+}
+
+.slider i:hover{
+    cursor: pointer;
+}
+
+.waitinglist-slider-form{
+    position: fixed;
+    top:0;
+    right: -100%;
+    bottom: 0;
+    background-color: #1D1D1D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition:all 0.5s linear;
+}
+
+.waitinglist-slider-form i{
+    position: absolute;
+    font-size: 30px;
+    top: 20px;
+    right: 20px;
+}
+
+.waitinglist-slider-form form label{
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.waitinglist-slider-form form input[type="email"]{
+    width: 200px;
+    height: 30px;
+    border: none;
+}
+
+.waitinglist-slider-form form input[type="submit"]{
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+}
+
+/* ==========================
+        Info
+============================*/
+
+.info{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 30vw 0 10vw;
+    font-size: 30px;
+}
+
+/* ==========================
+    alice-and-nav-wrapper
+============================*/
+.alice-and-nav-wrapper{
+    position: relative;
+}
+
+/* ==========================
+        Nav
+============================*/
+
+.nav{
+    position:sticky;
+    top:0;
+    padding: 2vh 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background: #E5E5E1;
+    z-index:5;
+}
+
+.nav h1{
+    font-size: 30px;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li{
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.nav ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* ==========================
+        alice one
+============================*/
+
+.alice-one{
+    display: flex;
+    position: sticky;
+    top: 4vh;
+}
+
+.alice-one-info{
+    padding: 35vh 5vw 35vh 3vw;
+    background: #E5E5E1;
+    width: 50%;
+}
+
+.alice-one-info h2{
+    margin-bottom: 50px;
+    width: 50%;
+}
+
+.alice-one-info p{
+    margin-bottom: 50px;
+    padding-right: 5vw;
+    font-size: 20px;
+}
+
+.alice-one-info a{
+    color: black;
+}
+
+.alice-one-bild{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #1D1D1D;
+    width: 50%;
+}
+
+.alice-one-bild img{
+    width: 80%;
+}
+
+/* ==========================
+        alice m
+============================*/
+
+.alice-m{
+    display: flex;
+    position: sticky;
+    top: 4vh;
+    z-index: 2;
+}
+
+.alice-m-info{
+    padding: 35vh 5vw 35vh 3vw;
+    background: #E5E5E1;
+    width: 50%;
+}
+
+.alice-m-info h2{
+    margin-bottom: 50px;
+    width: 50%;
+}
+
+.alice-m-info p{
+    margin-bottom: 50px;
+    padding-right: 5vw;
+    font-size: 20px;
+}
+
+.alice-m-info a{
+    color: black;
+}
+
+.alice-m-bild{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #1D1D1D;
+    width: 50%;
+}
+
+.alice-m-bild img{
+    width: 80%;
+}
+
+/* ==========================
+        alice studio
+============================*/
+
+.alice-studio{
+    display: flex;
+    position: sticky;
+    top: 4vh;
+    z-index: 3;
+}
+
+.alice-studio-info{
+    padding: 35vh 5vw 35vh 3vw;
+    background: #E5E5E1;
+    width: 50%;
+}
+
+.alice-studio-info h2{
+    margin-bottom: 50px;
+    width: 50%;
+}
+
+.alice-studio-info p{
+    margin-bottom: 50px;
+    padding-right: 5vw;
+    font-size: 20px;
+}
+
+.alice-studio-info a{
+    color: black;
+}
+
+.alice-studio-bild{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #1D1D1D;
+    width: 50%;
+}
+
+.alice-studio-bild img{
+    width: 80%;
+}
+
+/* ==========================
+        whyAlice
+============================*/
+
+.whyAlice .whyAlice-headline{
+    padding: 15vh 10vw 8vh 3vw;
+    width: 48%;
+}
+
+.whyAlice .whyAlice-headline h2{
+    margin-bottom: 30px;
+}
+
+.whyAlice .whyAlice-headline p{
+    font-size: 20px;
+}
+
+.whyAlice article{
+    display: flex;
+    align-items: baseline;
+    padding: 10vh 0 15vh 0;
+}
+
+.whyAlice article div{
+    width: 50%;
+}
+
+.whyAlice article div:nth-of-type(2){
+    padding:0 10vw 0 0;
+}
+
+.whyAlice article div:nth-of-type(2) p{
+    font-size: 24px;
+}
+
+.whyAlice div:first-child ul{
+    list-style: none;
+    padding-left: 3vw;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.whyAlice div:last-child p{
+    margin-bottom: 30px;
+}
+
+/* ==========================
+        whateverYouWant
+============================*/
+
+.whateverYouWant{
+    background: #1D1D1D;
+}
+
+.whateverYouWant-headline{
+    width: 40%;
+    padding: 15vh 0 10vh 3vw;
+    color:white;
+}
+
+.whateverYouWant-headline h2{
+    margin-bottom: 30px;
+}
+
+.whateverYouWant-scenario{
+    width: 80%;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    border-top: 1px solid #4A4846;
+    padding:10vh 0 25vh 0;
+}
+
+.whateverYouWant-scenario div{
+    color: #4A4846;
+}
+
+.whateverYouWant-scenario div:hover{
+    color: white;
+}
+
+/* ==========================
+        partner
+============================*/
+
+.partner{
+    background: #1D1D1D;
+}
+
+.partner-headline{
+    width: 40%;
+    padding: 5vh 0 10vh 3vw;
+    color:white;
+}
+
+.partner-headline h2{
+    margin-bottom: 30px;
+}
+
+.partner-list{
+    width: 80%;
+    margin: 0 auto;
+    display:grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    border-top: 1px solid #4A4846;
+    padding:10vh 0 25vh 0;
+}
+
+.partner-list div{
+    color: #4A4846;
+}
+
+.partner-list div:hover{
+    color: white;
+}
+
+/* ==========================
+        factsheet
+============================*/
+
+.factsheet{
+    padding-right: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.factsheet div h2{
+    margin-bottom: 30px;
+}
+
+.factsheet div{
+    padding: 13vh 5vw;
+}
+
+.factsheet div img{
+    width: 80%;
+}
+
+/* ==========================
+        waitingList
+============================*/
+
+.waitingList{
+    padding-top: 20vh;
+    display: flex;
+    background: #1D1D1D;
+    color: white;
+}
+
+.waitingList-input{
+    padding: 3vh 10vw 0 10vw;
+}
+
+.waitingList-input p:nth-of-type(1){
+    padding-bottom: 5vh;
+    font-size: 36px;
+    word-spacing: 5px;
+}
+
+.waitingList-input p:nth-of-type(2){
+    padding-bottom: 20vh;
+}
+
+.waitingList-input form{
+    padding: 3vh 0;
+    margin-bottom: 5vh;
+}
+
+.waitingList-input form input[type="email"]{
+    width: 60%;
+    height: 30px;
+    border: none;
+    display:block;
+    margin: 5px 0 10vh 0;
+    font-size: 20px;
+}
+
+.waitingList-input form input[type="submit"]{
+    padding: 8px 40px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.waitingList-legals{
+    padding: 5vh 10vw 0 3vw;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid white;
+}
+
+.waitingList-legals h1{
+    margin-bottom: 50px;
+}
+
+.waitingList-legals a{
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.waitingList-legals a:hover{
+    text-decoration: underline;
+}
+
+/* ==========================
+        contact
+============================*/
+
+.contact{
+    background: linear-gradient(to bottom right, white, orange);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5vw;
+    animation-name: animateBackground;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    font-size: 22px;
+}
+
+/* ==========================
+        footer
+============================*/
+
+footer{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 2vh 3vw;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+}
+
+footer ul li{
+    padding-left: 30px;
+}
+
+/* ==========================
+        keyframes
+============================*/
+
+@keyframes animateBackground{
+    0%{
+        filter: hue-rotate(0)
+    }
+    25%{
+        filter: hue-rotate(-90deg)
+    }
+    50%{
+        filter: hue-rotate(-180deg)
+    }
+    75%{
+        filter: hue-rotate(-90deg)
+    }
+    100%{
+        filter: hue-rotate(0);
+    }
+}
