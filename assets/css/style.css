@@ -50,10 +50,11 @@ h3{
 ============================*/
 
 .hero{
-    background: url("../img/AliceStudio.png") center / cover no-repeat;
+    background: url("../img/AliceStudioHero.jpeg") center / cover no-repeat;
     height: 100vh;
     display: flex;
     align-items: center;
+    padding-top: 5vh;
     padding-left: 5vw;
 }
 
@@ -73,10 +74,41 @@ h3{
     padding-left: 10px;
 }
 
-.test{
-    width: 283px;
-    height: 32px;
+.hero-text-wrapper{
+    /* width: 300px; */
+    height: 24px;
     overflow:hidden;
+}
+
+.hero-text-wrapper p {
+    line-height: 26px;
+    animation: textloop 6s infinite ease-in-out;
+    position: relative;
+    margin-left: 5px;
+}
+
+@keyframes textloop {
+    0% {
+    top: 0;
+    }
+    20%{
+        top: -26px;
+    }
+    25%{
+        top: -26px;
+    }
+    50%{
+        top: -54px;
+    }
+    55%{
+        top: -54px;
+    }
+    75%{
+        top: -80px;
+    }
+    80%{
+        top: -80px;
+    }
 }
 
 .hero i{
@@ -609,6 +641,17 @@ h3{
 
 .contact a:hover{
     text-decoration: underline;
+}
+
+/* ==========================
+        faq
+============================*/
+
+.faq{
+    margin: 10vh 10vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
 }
 
 /* ==========================
