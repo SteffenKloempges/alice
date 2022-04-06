@@ -7,8 +7,6 @@
     font-family: "HelveticaNowTextRegular";
     src: url('../fonts/HelveticaNowTextRegular/font.woff');
 }
-
-
 /* ==========================
         General
 ============================*/
@@ -61,7 +59,7 @@ h3{
 .hero-info{
     display: flex;
     align-items: baseline;
-    font-size: 30px;
+    font-size: 28px;
     font-family: "EuclidCircularA-Regular";
 }
 
@@ -76,12 +74,12 @@ h3{
 
 .hero-text-wrapper{
     /* width: 300px; */
-    height: 24px;
+    height: 35px;
     overflow:hidden;
 }
 
 .hero-text-wrapper p {
-    line-height: 26px;
+    line-height: 35px;
     animation: textloop 6s infinite ease-in-out;
     position: relative;
     margin-left: 5px;
@@ -92,22 +90,22 @@ h3{
     top: 0;
     }
     20%{
-        top: -26px;
+        top: -35px;
     }
     25%{
-        top: -26px;
+        top: -35px;
     }
     50%{
-        top: -54px;
+        top: -70px;
     }
     55%{
-        top: -54px;
+        top: -70px;
     }
     75%{
-        top: -80px;
+        top: -105px;
     }
     80%{
-        top: -80px;
+        top: -105px;
     }
 }
 
@@ -152,7 +150,7 @@ h3{
     justify-content: space-between;
     align-items: baseline;
     background: #E5E5E1;
-    z-index:5;
+    z-index:9;
 }
 
 .nav h1{
@@ -219,6 +217,51 @@ h3{
 }
 
 /* ==========================
+    alice one grundriss
+============================*/
+
+.alice-one-grundriss{
+    display: flex;
+    position: sticky;
+    top: 4vh;
+    z-index: 2;
+}
+
+.alice-one-info-grundriss{
+    visibility: hidden;
+    padding: 20vh 5vw 35vh 3vw;
+    background: #E5E5E1;
+    width: 50%;
+}
+
+.alice-one-info-grundriss h2{
+    margin-bottom: 50px;
+    width: 50%;
+}
+
+.alice-one-info-grundriss p{
+    margin-bottom: 50px;
+    padding-right: 5vw;
+    font-size: 20px;
+}
+
+.alice-one-info-grundriss a{
+    color: black;
+}
+
+.alice-one-bild-grundriss{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 80%;
+}
+
+.alice-one-bild-grundriss img{
+    width: 90%;
+}
+
+/* ==========================
         alice m
 ============================*/
 
@@ -263,6 +306,50 @@ h3{
 }
 
 /* ==========================
+        alice m grundriss
+============================*/
+
+.alice-m-grundriss{
+    display: flex;
+    position: sticky;
+    top: 4vh;
+    z-index: 4;
+}
+
+.alice-m-info-grundriss{
+    visibility: hidden;
+    padding: 20vh 5vw 35vh 3vw;
+    background: #E5E5E1;
+    width: 50%;
+}
+
+.alice-m-info-grundriss h2{
+    margin-bottom: 50px;
+    width: 50%;
+}
+
+.alice-m-info-grundriss p{
+    margin-bottom: 50px;
+    padding-right: 5vw;
+    font-size: 20px;
+}
+
+.alice-m-info-grundriss a{
+    color: black;
+}
+
+.alice-m-bild-grundriss{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 80%;
+}
+
+.alice-m-bild-grundriss img{
+    width: 90%;
+}
+/* ==========================
         alice studio
 ============================*/
 
@@ -270,7 +357,7 @@ h3{
     display: flex;
     position: sticky;
     top: 4vh;
-    z-index: 4;
+    z-index: 5;
 }
 
 .alice-studio-info{
@@ -303,6 +390,51 @@ h3{
 }
 
 .alice-studio-bild img{
+    width: 90%;
+}
+
+/* ==========================
+    alice studio grundriss
+============================*/
+
+.alice-studio-grundriss{
+    display: flex;
+    position: sticky;
+    top: 4vh;
+    z-index: 6;
+}
+
+.alice-studio-info-grundriss{
+    visibility: hidden;
+    padding: 20vh 5vw 35vh 3vw;
+    background: #E5E5E1;
+    width: 50%;
+}
+
+.alice-studio-info-grundriss h2{
+    margin-bottom: 50px;
+    width: 50%;
+}
+
+.alice-studio-info-grundriss p{
+    margin-bottom: 50px;
+    padding-right: 5vw;
+    font-size: 20px;
+}
+
+.alice-studio-info-grundriss a{
+    color: black;
+}
+
+.alice-studio-bild-grundriss{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #1D1D1D;
+    width: 80%;
+}
+
+.alice-studio-bild-grundriss img{
     width: 90%;
 }
 

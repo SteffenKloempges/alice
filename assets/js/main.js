@@ -73,7 +73,7 @@ kollaborator.addEventListener('mouseover', () => {
 // ========================
 
 let container = document.querySelector(".slider")
-let image = ["assets/img/Stage-Studio.png", "assets/img/Stage-One.png"]
+let image = ["assets/img/Stage-Studio.png", "assets/img/Stage-One.png", "assets/img/Stage-M.jpeg"]
 
 let index = 0
 
