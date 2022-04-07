@@ -329,3 +329,202 @@
 }
 
 }
+@media all and (max-width: 375px){
+    /* Remove Slider Form */
+    .waitinglist-slider-form{
+        display: none;
+    }
+    /* ==========================
+        Info
+============================*/
+
+.info{
+    height: 80vh;
+    padding: 0 10vw;
+    font-size: 16px;
+}
+/* ==========================
+        Nav
+============================*/
+.nav{
+    position:sticky;
+    top:0;
+    padding: 2vh 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background: #E5E5E1;
+    z-index:9;
+}
+.nav h1{
+    font-size: 24px;
+}
+/* ==========================
+        alice one
+============================*/
+
+/* reset all z-index */
+.alice-one, .alice-m, .alice-studio, .alice-one-grundriss, .alice-m-grundriss, .alice-studio-grundriss{
+    flex-direction: column;
+    position: static;
+    z-index: 1;
+}
+
+.alice-one-info, .alice-m-info, .alice-studio-info{
+    padding: 4vh 5vw;
+    width: 100%;
+}
+.alice-one-info-grundriss, .alice-m-info-grundriss , .alice-studio-info-grundriss{
+    display:none;
+}
+.alice-one-info h2, .alice-m-info h2, .alice-studio-info h2 {
+    margin-bottom: 30px;
+    width: 50%;
+}
+
+.alice-one-info p, .alice-m-info p, .alice-studio-info p{
+    margin-bottom: 30px;
+    text-align: justify;
+    padding-right: 0;
+    font-size: 16px;
+}
+.alice-one-bild, .alice-one-bild-grundriss, .alice-m-bild, .alice-m-bild-grundriss, .alice-studio-bild, .alice-studio-bild-grundriss{
+    padding: 0;
+    display: block;
+    width: 100%;
+    background: #fff;
+}
+.alice-one-bild img , .alice-one-bild-grundriss img ,.alice-m-bild img, .alice-m-bild-grundriss img, .alice-studio-bild img, .alice-studio-bild-grundriss img{
+    width: 100%;
+}
+/* ==========================
+        whyAlice
+============================*/
+
+.whyAlice .whyAlice-headline{
+    padding: 5vh 0 5vh 3vw;
+    width: 90%;
+}
+.whyAlice .whyAlice-headline h2{
+    margin-bottom: 0;
+}
+
+.whyAlice .whyAlice-headline p{
+    font-size: 14px;
+}
+
+.whyAlice article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.whyAlice article div{
+    width: 100%;
+}
+
+.whyAlice article div:nth-of-type(2){
+    padding: 0;
+}
+
+.whyAlice article div:nth-of-type(2) p{
+    font-size: 16px;
+}
+
+.whyAlice div:first-child ul{
+    font-size: 18px;
+}
+/* ==========================
+        whateverYouWant
+============================*/
+.whateverYouWant{
+    padding-bottom: 5vh;
+}
+.whateverYouWant-headline{
+    width: 90%;
+    padding: 8vh 0 5vh 3vw;
+}
+.whateverYouWant-headline p{
+    font-size: 14px;
+}
+.whateverYouWant-scenario{
+    width: 90%;
+    margin: 0;
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0 0 0 3vw;
+}
+.whateverYouWant-scenario div{
+    padding: 3vh 0;
+}
+
+/* ==========================
+        Slider
+============================*/
+
+.slider{
+    height: 50vh;
+    background: url(../img/Stage-One.png) center / cover no-repeat;
+    display: block;
+}
+.slider .waitinglist-slider{
+    display: none;
+}
+/* ==========================
+        partner
+============================*/
+.partner-headline {
+    width: 90%;
+}
+/* ==========================
+        factsheet
+============================*/
+.factsheet div img{
+    width: 80%;
+}
+/* ==========================
+        waitingList
+============================*/
+
+.waitingList-input p:nth-of-type(1){
+    font-size: 24px;
+}
+.waitingList-input{
+    padding: 3vh 5vw 0 5vw;
+}
+.waitingList-input form input[type="email"]{
+    width: 100%;
+    margin: 5px 0 5vh 0;
+}
+.waitingList-legals{
+    flex-direction: column;
+}
+.waitingList-legals h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.waitingList-legals a{
+    margin-bottom: 5px;
+}
+/* ==========================
+        footer
+============================*/
+
+footer{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+    padding: 10px 0;
+}
+footer ul{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer ul li{
+    padding: 10px 0;
+}
+}
