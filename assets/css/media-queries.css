@@ -329,7 +329,7 @@
 }
 
 }
-@media all and (max-width: 375px){
+@media all and (min-width: 375px){
     /* Remove Slider Form */
     .waitinglist-slider-form{
         display: none;
