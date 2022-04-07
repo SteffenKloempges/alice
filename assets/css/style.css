@@ -173,6 +173,22 @@ h3{
 }
 
 /* ==========================
+        Nav Mobile
+============================*/
+
+.nav-mobile{
+    display: none;
+}
+
+.nav-mobile span{
+    background: #000;
+    display: block;
+    height: 5px;
+    width: 30px;
+    margin: 4px 0;
+}
+
+/* ==========================
         alice one
 ============================*/
 
@@ -480,11 +496,11 @@ h3{
     font-weight: bold;
 }
 
-.whyAlice .list-mouseover {
-    transition: all 3s linear;
+.whyAlice #list-mouseover {
+    transition: all .7s linear;
 }
 
-.whyAlice .list-mouseover p{
+.whyAlice #list-mouseover p{
     margin-bottom: 30px;
 }
 

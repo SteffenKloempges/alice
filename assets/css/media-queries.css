@@ -105,3 +105,227 @@
         padding-top: 12vh;
     }
 }
+
+@media all and (max-width: 992px){
+    .info{
+        font-size: 24px;
+    }
+    /* ============================
+        alice one/m/studio
+    =============================*/
+    .alice-one-info, .alice-m-info, .alice-studio-info{
+        padding: 13vh 5vw 11vh 3vw;
+    }
+    .alice-one-info p, .alice-m-info p, .alice-studio-info p{
+        font-size: 16px;
+    }
+    .alice-one-bild, .alice-one-bild-grundriss, .alice-m-bild, .alice-m-bild-grundriss, .alice-studio-bild, .alice-studio-bild-grundriss{
+        padding-top: 10vh;
+        align-items: center;
+        width: 80%;
+    }
+    .alice-one-bild-grundriss, .alice-m-bild-grundriss, .alice-studio-bild-grundriss{
+        padding-top: 18vh;
+        align-items: flex-start;
+        width: 80%;
+    }
+    .alice-one-bild img, .alice-one-bild-grundriss img, .alice-m-bild img, .alice-m-bild-grundriss img, .alice-studio-bild img, .alice-studio-bild-grundriss img{
+        width: 90%;
+    }
+    /* ==========================
+            whyAlice
+    ============================*/
+    .whyAlice .whyAlice-headline p{
+        font-size: 16px;
+    }
+    .whyAlice #list-mouseover {
+        font-size: 16px;
+    }
+    /* ==========================
+        whateverYouWant
+    ============================*/
+
+    .whateverYouWant-headline{
+        width: 65%;
+        padding: 15vh 0 5vh 3vw;
+    }
+
+    .whateverYouWant-headline p{
+        width: 80%
+    }
+
+    .whateverYouWant-scenario{
+        gap: 60px;
+        padding:5vh 0 15vh 0;
+    }
+
+    /* ==========================
+            Slider
+    ============================*/
+    .slider .waitinglist-slider p{
+        font-size: 22px;
+    }
+}
+@media all and (max-width: 768px){
+    .hero-info{
+        flex-direction: column;
+    }
+    .hero-info div{
+        padding: 0;
+    }
+    /* ==========================
+        Info
+============================*/
+
+.info{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10vw 0 10vw;
+    font-size: 30px;
+}
+/* ==========================
+        Nav
+============================*/
+    .nav ul{
+        display:none;
+    }
+    .nav-mobile{
+        display: block;
+    }
+    /* ============================
+        alice one/m/studio
+    =============================*/
+    .alice-one-info, .alice-m-info, .alice-studio-info{
+        padding: 5vh 5vw 11vh 3vw;
+    }
+    .alice-one-info p, .alice-m-info p, .alice-studio-info p{
+        font-size: 16px;
+    }
+    .alice-one-bild, .alice-one-bild-grundriss, .alice-m-bild, .alice-m-bild-grundriss, .alice-studio-bild, .alice-studio-bild-grundriss{
+        padding-top: 0;
+        align-items: center;
+        width: 80%;
+    }
+    .alice-one-bild-grundriss, .alice-m-bild-grundriss, .alice-studio-bild-grundriss{
+        padding-top: 18vh;
+        align-items: flex-start;
+        width: 80%;
+    }
+    .alice-one-bild img, .alice-one-bild-grundriss img, .alice-m-bild img, .alice-m-bild-grundriss img, .alice-studio-bild img, .alice-studio-bild-grundriss img{
+        width: 90%;
+    }
+    /* ==========================
+        whyAlice
+============================*/
+
+.whyAlice .whyAlice-headline{
+    padding: 8vh 10vw 8vh 3vw;
+    width: 60%;
+}
+/* ==========================
+        whateverYouWant
+============================*/
+.whateverYouWant-headline{
+    padding: 8vh 0 5vh 3vw;
+    
+}
+
+.whateverYouWant-headline h2{
+    margin-bottom: 30px;
+}
+
+.whateverYouWant-scenario{
+    width: 80%;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding:5vh 0 15vh 0;
+}
+/* ==========================
+        Slider
+============================*/
+
+.slider{
+    height: 50vh;
+    background: url("../img/Stage-One.png") center / contain no-repeat;
+    display:flex;
+    align-items: flex-end;
+    transition : all 1s linear;
+}
+/* ==========================
+            partner
+    ============================*/
+    .partner-headline{
+        width: 60%;
+        padding: 8vh 0 5vh 3vw;
+    }
+    .partner-headline p{
+        font-size: 14px;
+    }
+    .partner-list{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        padding:5vh 0 10vh 0;
+    }
+    .partner-list div img{
+        width: 80%;
+    }
+    /* ==========================
+        factsheet
+============================*/
+
+.factsheet{
+    flex-direction: column;
+}
+.factsheet div{
+    padding: 5vh 5vw 5vh 10vw;
+}
+.factsheet div:nth-of-type(2){
+    text-align: center;
+}
+.factsheet div img{
+    width: 50%;
+}
+/* ==========================
+        waitingList
+============================*/
+
+.waitingList{
+    padding-top: 8vh;
+    flex-direction: column;
+}
+.waitingList-input p:nth-of-type(2){
+    padding-bottom: 5vh;
+}
+.waitingList-legals{
+    padding: 3vh 0;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    border-left: none;
+    border-top: 1px solid white;
+}
+.waitingList-legals h1{
+    margin-bottom: 0;
+}
+.waitingList-legals a{
+    margin-bottom: 0;
+}
+/* ==========================
+        faq
+============================*/
+
+.faq{
+    display: none;
+}
+/* ==========================
+        contact
+============================*/
+
+.contact{
+    height: 50vh;
+}
+
+}
