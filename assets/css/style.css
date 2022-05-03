@@ -7,39 +7,47 @@
     font-family: "HelveticaNowTextRegular";
     src: url('../fonts/HelveticaNowTextRegular/font.woff');
 }
+
 /* ==========================
         General
 ============================*/
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-*:before, *:after { 
-    -webkit-box-sizing: border-box; 
-    -moz-box-sizing: border-box; 
-    box-sizing: border-box; 
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-h1,h2{
+h1,
+h2 {
     font-family: "EuclidCircularA-Regular";
 }
 
-h2{
+h2 {
     font-size: 28px;
 }
 
-h3, p, a, li, input, label{
+h3,
+p,
+a,
+li,
+input,
+label {
     font-family: "HelveticaNowTextRegular";
 }
 
-h3{
+h3 {
     font-size: 26px;
 }
 
@@ -47,8 +55,9 @@ h3{
         Hero
 ============================*/
 
-.hero{
-    background: url("../img/AliceStudioHero.jpeg") center / cover no-repeat;
+.hero {
+    background-blend-mode: multiply;
+    background: rgba(0, 0, 0, 0.3) url("../img/AliceStudioHero.jpeg") center / cover no-repeat;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -56,30 +65,30 @@ h3{
     padding-left: 5vw;
 }
 
-.hero-info{
+.hero-info {
     display: flex;
     align-items: baseline;
-    font-size: 28px;
+    font-size: 40px;
     font-family: "EuclidCircularA-Regular";
 }
 
-.hero-info p{
-    color:white;
+.hero-info p {
+    color: white;
     font-family: "EuclidCircularA-Regular";
 }
 
-.hero-info div{
+.hero-info div {
     padding-left: 10px;
 }
 
-.hero-text-wrapper{
+.hero-text-wrapper {
     /* width: 300px; */
-    height: 35px;
-    overflow:hidden;
+    height: 50px;
+    overflow: hidden;
 }
 
 .hero-text-wrapper p {
-    line-height: 35px;
+    line-height: 50px;
     animation: textloop 6s infinite ease-in-out;
     position: relative;
     margin-left: 5px;
@@ -87,33 +96,39 @@ h3{
 
 @keyframes textloop {
     0% {
-    top: 0;
+        top: 0;
     }
-    20%{
-        top: -35px;
+
+    20% {
+        top: -50px;
     }
-    25%{
-        top: -35px;
+
+    25% {
+        top: -50px;
     }
-    50%{
-        top: -70px;
+
+    50% {
+        top: -100px;
     }
-    55%{
-        top: -70px;
+
+    55% {
+        top: -100px;
     }
-    75%{
-        top: -105px;
+
+    75% {
+        top: -150px;
     }
-    80%{
-        top: -105px;
+
+    80% {
+        top: -150px;
     }
 }
 
-.hero i{
+.hero i {
     color: black;
     font-size: 40px;
     position: absolute;
-    bottom:20px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -123,18 +138,21 @@ h3{
         Info
 ============================*/
 
-.info{
+.info {
     height: 100vh;
     display: flex;
     align-items: center;
     padding: 0 30vw 0 10vw;
-    font-size: 30px;
+}
+
+.info p {
+    font-size: 36px;
 }
 
 /* ==========================
     alice-and-nav-wrapper
 ============================*/
-.alice-and-nav-wrapper{
+.alice-and-nav-wrapper {
     position: relative;
 }
 
@@ -142,32 +160,32 @@ h3{
         Nav
 ============================*/
 
-.nav{
-    position:sticky;
-    top:0;
+.nav {
+    position: sticky;
+    top: 0;
     padding: 2vh 2vw;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     background: #E5E5E1;
-    z-index:9;
+    z-index: 9;
 }
 
-.nav h1{
-    font-size: 30px;
+.nav h1 {
+    font-size: 32px;
 }
 
-.nav ul{
+.nav ul {
     display: flex;
     list-style: none;
 }
 
-.nav ul li{
-    font-size: 20px;
+.nav ul li {
+    font-size: 24px;
     padding: 0 20px;
 }
 
-.nav ul li:hover{
+.nav ul li:hover {
     text-decoration: underline;
     cursor: pointer;
 }
@@ -176,11 +194,11 @@ h3{
         Nav Mobile
 ============================*/
 
-.nav-mobile{
+.nav-mobile {
     display: none;
 }
 
-.nav-mobile span{
+.nav-mobile span {
     background: #000;
     display: block;
     height: 5px;
@@ -189,268 +207,120 @@ h3{
 }
 
 /* ==========================
-        alice one
+        alice alle 3 größen
 ============================*/
 
-.alice-one{
+.alice {
     display: flex;
     position: sticky;
     top: 4vh;
+}
+
+.one {
     z-index: 1;
 }
 
-.alice-one-info{
-    padding: 20vh 5vw 35vh 3vw;
-    background: #E5E5E1;
-    width: 50%;
-}
-
-.alice-one-info h2{
-    margin-bottom: 50px;
-    width: 50%;
-}
-
-.alice-one-info p{
-    margin-bottom: 50px;
-    padding-right: 5vw;
-    font-size: 20px;
-}
-
-.alice-one-info a{
-    color: black;
-}
-
-.alice-one-bild{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background: #1D1D1D;
-    width: 80%;
-}
-
-.alice-one-bild img{
-    width: 90%;
-}
-
-/* ==========================
-    alice one grundriss
-============================*/
-
-.alice-one-grundriss{
-    display: flex;
-    position: sticky;
-    top: 4vh;
-    z-index: 2;
-}
-
-.alice-one-info-grundriss{
-    visibility: hidden;
-    padding: 20vh 5vw 35vh 3vw;
-    background: #E5E5E1;
-    width: 50%;
-}
-
-.alice-one-info-grundriss h2{
-    margin-bottom: 50px;
-    width: 50%;
-}
-
-.alice-one-info-grundriss p{
-    margin-bottom: 50px;
-    padding-right: 5vw;
-    font-size: 20px;
-}
-
-.alice-one-info-grundriss a{
-    color: black;
-}
-
-.alice-one-bild-grundriss{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    width: 80%;
-}
-
-.alice-one-bild-grundriss img{
-    width: 90%;
-}
-
-/* ==========================
-        alice m
-============================*/
-
-.alice-m{
-    display: flex;
-    position: sticky;
-    top: 4vh;
+.m {
     z-index: 3;
 }
 
-.alice-m-info{
-    padding: 20vh 5vw 35vh 3vw;
+.studio {
+    z-index: 5;
+}
+
+.alice-info {
+    padding: 10vh 5vw 35vh 3vw;
     background: #E5E5E1;
     width: 50%;
 }
 
-.alice-m-info h2{
+.alice-info h2 {
+    font-size: 32px;
     margin-bottom: 50px;
     width: 50%;
 }
 
-.alice-m-info p{
+.alice-info p {
     margin-bottom: 50px;
     padding-right: 5vw;
     font-size: 20px;
 }
 
-.alice-m-info a{
+.alice-info a {
     color: black;
+    font-size: 16px;
 }
 
-.alice-m-bild{
-    display:flex;
+.alice-bild {
+    display: flex;
     justify-content: center;
     align-items: center;
     background: #1D1D1D;
+    padding-bottom: 15vh;
     width: 80%;
 }
 
-.alice-m-bild img{
+.alice-bild img {
     width: 90%;
 }
 
 /* ==========================
-        alice m grundriss
+    alice grundriss alle 3 größen
 ============================*/
 
-.alice-m-grundriss{
+.alice-grundriss {
     display: flex;
     position: sticky;
     top: 4vh;
+}
+
+.one-grundriss {
+    z-index: 2;
+}
+
+.m-grundriss {
     z-index: 4;
 }
 
-.alice-m-info-grundriss{
+.studio-grundriss {
+    z-index: 6;
+}
+
+.alice-info-grundriss {
     visibility: hidden;
-    padding: 20vh 5vw 35vh 3vw;
+    padding: 10vh 5vw 35vh 3vw;
     background: #E5E5E1;
     width: 50%;
 }
 
-.alice-m-info-grundriss h2{
+.alice-info-grundriss h2 {
+    font-size: 24px;
     margin-bottom: 50px;
     width: 50%;
 }
 
-.alice-m-info-grundriss p{
+.alice-info-grundriss p {
+    font-size: 16px;
     margin-bottom: 50px;
     padding-right: 5vw;
     font-size: 20px;
 }
 
-.alice-m-info-grundriss a{
+.alice-info-grundriss a {
+    font-size: 16px;
     color: black;
 }
 
-.alice-m-bild-grundriss{
-    display:flex;
+.alice-bild-grundriss {
+    display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 10vh;
     background: white;
     width: 80%;
 }
 
-.alice-m-bild-grundriss img{
-    width: 90%;
-}
-/* ==========================
-        alice studio
-============================*/
-
-.alice-studio{
-    display: flex;
-    position: sticky;
-    top: 4vh;
-    z-index: 5;
-}
-
-.alice-studio-info{
-    padding: 20vh 5vw 35vh 3vw;
-    background: #E5E5E1;
-    width: 50%;
-}
-
-.alice-studio-info h2{
-    margin-bottom: 50px;
-    width: 50%;
-}
-
-.alice-studio-info p{
-    margin-bottom: 50px;
-    padding-right: 5vw;
-    font-size: 20px;
-}
-
-.alice-studio-info a{
-    color: black;
-}
-
-.alice-studio-bild{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background: #1D1D1D;
-    width: 80%;
-}
-
-.alice-studio-bild img{
-    width: 90%;
-}
-
-/* ==========================
-    alice studio grundriss
-============================*/
-
-.alice-studio-grundriss{
-    display: flex;
-    position: sticky;
-    top: 4vh;
-    z-index: 6;
-}
-
-.alice-studio-info-grundriss{
-    visibility: hidden;
-    padding: 20vh 5vw 35vh 3vw;
-    background: #E5E5E1;
-    width: 50%;
-}
-
-.alice-studio-info-grundriss h2{
-    margin-bottom: 50px;
-    width: 50%;
-}
-
-.alice-studio-info-grundriss p{
-    margin-bottom: 50px;
-    padding-right: 5vw;
-    font-size: 20px;
-}
-
-.alice-studio-info-grundriss a{
-    color: black;
-}
-
-.alice-studio-bild-grundriss{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background: #1D1D1D;
-    width: 80%;
-}
-
-.alice-studio-bild-grundriss img{
+.alice-bild-grundriss img {
     width: 90%;
 }
 
@@ -458,315 +328,321 @@ h3{
         whyAlice
 ============================*/
 
-.whyAlice .whyAlice-headline{
+.whyAlice .whyAlice-headline {
     padding: 15vh 10vw 8vh 3vw;
-    width: 48%;
+    margin-top: 10vh;
+    width: 50%;
 }
 
-.whyAlice .whyAlice-headline h2{
+.whyAlice .whyAlice-headline h2 {
+    font-size: 36px;
     margin-bottom: 30px;
 }
 
-.whyAlice .whyAlice-headline p{
+.whyAlice .whyAlice-headline p {
     font-size: 20px;
 }
 
-.whyAlice article{
+.whyAlice article {
     display: flex;
     align-items: baseline;
     padding: 10vh 0 15vh 0;
 }
 
-.whyAlice article div{
+.whyAlice article div {
     width: 50%;
 }
 
-.whyAlice article div:nth-of-type(2){
-    padding:0 10vw 0 0;
+.whyAlice article div:nth-of-type(2) {
+    padding: 0 10vw 0 0;
 }
 
-.whyAlice article div:nth-of-type(2) p{
-    font-size: 24px;
+.whyAlice article div:nth-of-type(2) p {
+    font-size: 30px;
 }
 
-.whyAlice div:first-child ul{
+.whyAlice article div:first-child ul {
     list-style: none;
     padding-left: 3vw;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: bold;
+    padding-bottom: 20vh;
 }
 
-.whyAlice #list-mouseover {
-    transition: all .7s linear;
-}
+/* .whyAlice #list-mouseover {
+    opacity: 0;
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -ms-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+} */
 
-.whyAlice #list-mouseover p{
+.whyAlice #list-mouseover p {
     margin-bottom: 30px;
 }
-
-
 
 /* ==========================
         whateverYouWant
 ============================*/
 
-.whateverYouWant{
+.whateverYouWant {
+    padding: 5vh 0;
     background: #1D1D1D;
 }
 
-.whateverYouWant-headline{
-    width: 40%;
+.whateverYouWant-headline {
+    width: 45%;
     padding: 15vh 0 10vh 3vw;
-    color:white;
-}
-
-.whateverYouWant-headline h2{
-    margin-bottom: 30px;
-}
-
-.whateverYouWant-scenario{
-    width: 80%;
-    margin: 0 auto;
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 80px;
-    padding:10vh 0 25vh 0;
-}
-
-.whateverYouWant-scenario div{
     color: white;
 }
 
+.whateverYouWant-headline h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.whateverYouWant-headline p {
+    font-size: 20px;
+}
+
+.whateverYouWant-scenario {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    padding: 10vh 0 25vh 0;
+}
+
+.whateverYouWant-scenario div {
+    color: white;
+}
+
+.whateverYouWant-scenario h3 {
+    font-size: 28px;
+}
+
+.whateverYouWant-scenario p {
+    font-size: 20px;
+}
 
 /* ==========================
         Slider
 ============================*/
 
-.slider{
+.slider {
     height: 100vh;
     background: url("../img/Stage-One.png") center 70% / cover no-repeat;
-    display:flex;
-    align-items: flex-end;
-    transition : all 1s linear;
-}
-
-.slider .waitinglist-slider{
-    border-top: 1px solid white;
-    padding: 3vh 2vw;
-    width: 100%;
-    color: white;
     display: flex;
     justify-content: space-between;
-}
-
-.slider .waitinglist-slider p{
-    font-size: 36px;
-}
-
-.slider .waitinglist-slider i{
-    font-size: 40px;
-}
-
-.slider i:hover{
-    cursor: pointer;
-}
-
-.waitinglist-slider-form{
-    position: fixed;
-    top:0;
-    right: -100%;
-    bottom: 0;
-    background-color: #1D1D1D;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    color: white;
-    transition:all 0.5s linear;
+    transition: all 1s linear;
 }
 
-.waitinglist-slider-form i{
-    position: absolute;
-    font-size: 30px;
-    top: 20px;
-    right: 20px;
-}
-
-.waitinglist-slider-form p{
-    padding-bottom: 5vh;
+.slider i {
     font-size: 36px;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 3%;
 }
 
-.waitinglist-slider-form form label{
-    font-size: 20px;
-    padding-right: 10px;
-}
-
-.waitinglist-slider-form form input[type="email"]{
-    width: 100%;
-    height: 50px;
-    border: 1px solid white;
-    background: transparent;
-    display:block;
-    margin: 5px 0 10vh 0;
-    font-size: 20px;
-    color: white;
-}
-
-.waitinglist-slider-form form input[type="submit"]{
-    padding: 8px 40px;
-    border: none;
-    border-radius: 15px;
-    font-size: 20px;
-    transition: all 0.5s linear;
-}
-
-.waitinglist-slider-form form input[type="submit"]:hover{
-    box-shadow: 0 0 6px white;
-    transition: all 0.5s linear;
+.slider i:hover {
     cursor: pointer;
+    color: rgba(255, 255, 255);
 }
-
-/* ==========================
-        partner
-============================*/
-
-.partner{
-    background: #1D1D1D;
-}
-
-.partner-headline{
-    width: 40%;
-    padding: 15vh 0 15vh 3vw;
-    color:white;
-}
-
-.partner-headline h2{
-    margin-bottom: 30px;
-}
-
-.partner-list{
-    width: 80%;
-    margin: 0 auto;
-    display:grid;
-    place-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 80px;
-    padding:10vh 0 25vh 0;
-}
-
-.partner-list div{
-    text-align: center;
-}
-
-.partner-list div img{
-    width: 70%;
-}
-
 
 /* ==========================
         factsheet
 ============================*/
 
-.factsheet{
+.factsheet {
     padding-right: 5vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.factsheet div h2{
+.factsheet div h2 {
+    font-size: 32px;
     margin-bottom: 30px;
 }
 
-.factsheet div{
+.factsheet div {
     padding: 13vh 5vw;
 }
 
-.factsheet div img{
+.factsheet div img {
     width: 80%;
 }
+
+/* ==========================
+        partner
+============================*/
+
+.partner {
+    background: #1D1D1D;
+}
+
+.partner-headline {
+    width: 40%;
+    padding: 15vh 0 15vh 3vw;
+    color: white;
+}
+
+.partner-headline h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.partner-headline p {
+    font-size: 16px;
+}
+
+.partner-list {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    padding: 10vh 0 25vh 0;
+}
+
+.partner-list div {
+    text-align: center;
+}
+
+.partner-list div img {
+    width: 70%;
+}
+
 
 /* ==========================
         waitingList
 ============================*/
 
-.waitingList{
+.waitingList {
     padding-top: 20vh;
     display: flex;
     background: #1D1D1D;
     color: white;
 }
 
-.waitingList-input{
+.waitingList-input {
     padding: 3vh 10vw 0 10vw;
 }
 
-.waitingList-input p:nth-of-type(1){
+.waitingList-input p:nth-of-type(1) {
     padding-bottom: 5vh;
-    font-size: 36px;
+    font-size: 32px;
 }
 
-.waitingList-input p:nth-of-type(2){
+.waitingList-input p:nth-of-type(2) {
     padding-bottom: 20vh;
 }
 
-.waitingList-input form{
+.waitingList-input form {
     padding: 3vh 0;
     margin-bottom: 5vh;
 }
 
-.waitingList-input form input[type="email"]{
+.waitingList-input form label {
+    font-size: 16px;
+}
+
+.waitingList-input form input[type="email"] {
     width: 60%;
     height: 50px;
     border: 1px solid white;
     background: transparent;
-    display:block;
+    display: block;
     margin: 5px 0 10vh 0;
-    font-size: 20px;
+    font-size: 16px;
     color: white;
 }
 
-.waitingList-input form input[type="submit"]{
+.waitingList-input form input[type="submit"] {
     padding: 8px 40px;
     border: none;
     border-radius: 15px;
-    font-size: 20px;
+    font-size: 16px;
     transition: all 0.5s linear;
 }
 
-.waitingList-input form input[type="submit"]:hover{
+.waitingList-input form input[type="submit"]:hover {
     box-shadow: 0 0 6px white;
     transition: all 0.5s linear;
     cursor: pointer;
 }
 
-.waitingList-legals{
+.waitingList-legals {
     padding: 5vh 10vw 0 3vw;
     display: flex;
     flex-direction: column;
     border-left: 1px solid white;
 }
 
-.waitingList-legals h1{
+.waitingList-legals h1 {
+    font-size: 24px;
     margin-bottom: 50px;
 }
 
-.waitingList-legals a{
-    display: block;
-    margin-bottom: 10px;
-    color: white;
-    text-decoration: none;
+
+/* ==========================
+        faq
+============================*/
+
+.faq {
+    margin: 10vh 5vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
 }
 
-.waitingList-legals a:hover{
-    text-decoration: underline;
+.faq div {
+    margin-bottom: 20px;
+}
+
+.accordion {
+    position: relative;
+    background-color: white;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 24px;
+    transition: 0.4s;
+}
+
+.accordion:after {
+    position: absolute;
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    top: 18px;
+    right: 0;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 /* ==========================
         contact
 ============================*/
 
-.contact{
+.contact {
     background: linear-gradient(to bottom right, white, orange);
     height: 100vh;
     display: flex;
@@ -776,105 +652,56 @@ h3{
     animation-name: animateBackground;
     animation-duration: 20s;
     animation-iteration-count: infinite;
-    font-size: 22px;
+    font-size: 32px;
 }
 
-.contact a{
+.contact a {
     color: black;
     font-weight: bold;
     text-decoration: none;
 }
 
-.contact a:hover{
+.contact a:hover {
     text-decoration: underline;
 }
-
-/* ==========================
-        faq
-============================*/
-
-.faq{
-    margin: 10vh 5vw;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5%;
-}
-
-.faq div{
-    margin-bottom: 20px;
-}
-
-.accordion {
-    background-color: white;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-  }
-  
-  .accordion:after {
-    content: '\002B';
-    color: #777;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-  }
-  
-  .active:after {
-    content: "\2212";
-  }
-  
-  .panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
 
 /* ==========================
         footer
 ============================*/
 
-footer{
+footer {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
     padding: 2vh 3vw;
 }
 
-footer ul{
-    display: flex;
-    list-style: none;
-}
-
-footer ul li{
-    padding-left: 30px;
+footer p {
+    font-size: 16px;
 }
 
 /* ==========================
         keyframes
 ============================*/
 
-@keyframes animateBackground{
-    0%{
+@keyframes animateBackground {
+    0% {
         filter: hue-rotate(0)
     }
-    25%{
+
+    25% {
         filter: hue-rotate(-90deg)
     }
-    50%{
+
+    50% {
         filter: hue-rotate(-180deg)
     }
-    75%{
+
+    75% {
         filter: hue-rotate(-90deg)
     }
-    100%{
+
+    100% {
         filter: hue-rotate(0);
     }
 }

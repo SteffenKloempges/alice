@@ -11,15 +11,15 @@ let kollaborator = document.getElementById('kollaborator')
 let service = document.getElementById('service')
 
 
-openForm.addEventListener('click', () => {
-    document.querySelector('.waitinglist-slider-form').style.right = 0;
-    document.querySelector('.waitinglist-slider-form').style.left = "0";
-})
+// openForm.addEventListener('click', () => {
+//     document.querySelector('.waitinglist-slider-form').style.right = 0;
+//     document.querySelector('.waitinglist-slider-form').style.left = "0";
+// })
 
-closeForm.addEventListener('click', () => {
-    document.querySelector('.waitinglist-slider-form').style.right = "-100%";
-    document.querySelector('.waitinglist-slider-form').style.left = "100%";
-})
+// closeForm.addEventListener('click', () => {
+//     document.querySelector('.waitinglist-slider-form').style.right = "-100%";
+//     document.querySelector('.waitinglist-slider-form').style.left = "100%";
+// })
 
 // =====================================
 //         why alice text hover
@@ -27,19 +27,23 @@ closeForm.addEventListener('click', () => {
 
 design.addEventListener('mouseover', () => {
     design.style.color = "lightgreen"
+    listMouseOver.style.opacity = "1"
     listMouseOver.innerHTML = 'Auch ohne Ecken und Kanten unverwechselbar. Alice ist schlicht, sympathisch und aus jedem Winkel schön.'
 })
 
 design.addEventListener('mouseout', () => {
+    listMouseOver.style.opacity = "0"
     design.style.color = "black"
 })
 
 threeSixFive.addEventListener('mouseover', () => {
     threeSixFive.style.color = "lightcoral"
+    listMouseOver.style.opacity = "1"
     listMouseOver.innerHTML = 'Ökologisch nachhaltige Volldämmung, Dreifachverglasung und elektrische Fußbodenheizung. Alice ist auf jede Wettersituation vorbereitet und wird damit zu dem Ort, an dem sich jeder an 365 Tagen im Jahr wohl fühlt. '
 })
 
 threeSixFive.addEventListener('mouseout', () => {
+    listMouseOver.style.opacity = "0"
     threeSixFive.style.color = "black"
 })
 
@@ -72,12 +76,15 @@ kollaborator.addEventListener('mouseover', () => {
 //      auto slider
 // ========================
 
-let container = document.querySelector(".slider")
+// let dotOne = document.getElementById('dotOne')
+// let dotTwo = document.getElementById('dotTwo')
+// let dotThree = document.getElementById('dotThree')
+let container = document.getElementById('slider')
 let image = ["assets/img/Stage-Studio.png", "assets/img/Stage-One.png", "assets/img/Stage-M.jpeg"]
 
 let index = 0
 
-function slide() {
+function forward() {
     index++
     if (index > image.length - 1) {
         index = 0
@@ -85,21 +92,25 @@ function slide() {
     container.style.backgroundImage = `url(${image[index]}`
 }
 
-setInterval(function () {
-    slide()
-}, 5000);
+function backward() {
+    index--
+    if (index < 0) {
+        index = image.length - 1
+    }
+    container.style.backgroundImage = `url(${image[index]}`
+}
 
 // ========================
 //      accordion
 // ========================
 
-var acc = document.getElementsByClassName("accordion");
-var i;
+let acc = document.getElementsByClassName("accordion");
+let i;
 
 for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function () {
         this.classList.toggle("active");
-        var panel = this.nextElementSibling;
+        let panel = this.nextElementSibling;
         if (panel.style.maxHeight) {
             panel.style.maxHeight = null;
         } else {
