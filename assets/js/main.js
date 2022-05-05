@@ -25,30 +25,32 @@ let service = document.getElementById('service')
 //         why alice text hover
 //======================================
 
+// #F500EF
+// #50FF00
+// #3903E4
+// #F0FF02
+
+
 design.addEventListener('mouseover', () => {
-    design.style.color = "lightgreen"
-    listMouseOver.style.opacity = "1"
+    design.style.color = "#F500EF"
     listMouseOver.innerHTML = 'Auch ohne Ecken und Kanten unverwechselbar. Alice ist schlicht, sympathisch und aus jedem Winkel schön.'
 })
 
 design.addEventListener('mouseout', () => {
-    listMouseOver.style.opacity = "0"
     design.style.color = "black"
 })
 
 threeSixFive.addEventListener('mouseover', () => {
-    threeSixFive.style.color = "lightcoral"
-    listMouseOver.style.opacity = "1"
+    threeSixFive.style.color = "#50FF00"
     listMouseOver.innerHTML = 'Ökologisch nachhaltige Volldämmung, Dreifachverglasung und elektrische Fußbodenheizung. Alice ist auf jede Wettersituation vorbereitet und wird damit zu dem Ort, an dem sich jeder an 365 Tagen im Jahr wohl fühlt. '
 })
 
 threeSixFive.addEventListener('mouseout', () => {
-    listMouseOver.style.opacity = "0"
     threeSixFive.style.color = "black"
 })
 
 standortfreiheit.addEventListener('mouseover', () => {
-    standortfreiheit.style.color = "lightskyblue"
+    standortfreiheit.style.color = "#3903E4"
     listMouseOver.innerHTML = 'Im Garten, auf der Dachterrasse oder deinem Lieblingsort. Alice ist unkompliziert und schnell dort platzierbar, wo Du dich wohl fühlst. Und ändern sich deine Pläne, ist für Alice kein Weg zu weit. With you wherever you’re going.'
 })
 
@@ -57,28 +59,54 @@ standortfreiheit.addEventListener('mouseout', () => {
 })
 
 vorfertigung.addEventListener('mouseover', () => {
+    vorfertigung.style.color = '#F0FF02'
     listMouseOver.innerHTML = 'Lorem lorem lorem lorem lorem lorem.'
 })
 
+vorfertigung.addEventListener('mouseout', () => {
+    vorfertigung.style.color = "black"
+})
+
 material.addEventListener('mouseover', () => {
+    material.style.color = '#F500EF'
     listMouseOver.innerHTML = 'Less is more und deshalb setzt sich Alice aus sehr wenigen Materialien zusammen, die möglichst häufig Verwendung finden und das Wertvolle im Einfachen betonen. A mindful approach: Alice besteht zu über 80% aus Holz. Dieses beziehen wir ausschließlich aus heimischen Wäldern, die nachweislich ökologisch, ökonomisch und sozial nachhaltig bewirtschaftet werden. Die Materialkomposition von Alice  ist ein sorgfältig ausgesuchtes Zusammenspiel der Naturwerkstoffe Holz, Linoleum und Wollfilz.'
 })
 
+material.addEventListener('mouseout', () => {
+    material.style.color = "black"
+})
+
 herstellung.addEventListener('mouseover', () => {
+    herstellung.style.color = '#50FF00'
     listMouseOver.innerHTML = 'Alice ist Made in Germany und vom ersten bis letzten Fertigungsschritt in den besten Händen unseres inhabergeführten Partners. Dieser hebt Alice dank 100-jähriger Erfahrung, Exzellenz und modernstem Technologie-Einsatz auf ein Niveau, welches den Unterschied aus macht.'
 })
 
+herstellung.addEventListener('mouseout', () => {
+    herstellung.style.color = "black"
+})
+
 kollaborator.addEventListener('mouseover', () => {
+    kollaborator.style.color = '#3903E4'
     listMouseOver.innerHTML = 'Wir arbeiten mit den weltweit besten Herstellern zusammen, dessen Komponenten und Systeme sich nahtlos in das bestehende Design von Alice einfügen und stilistisch wie materiell auf Langlebigkeit ausgelegt sind. It´s a match. '
 })
 
+kollaborator.addEventListener('mouseout', () => {
+    kollaborator.style.color = "black"
+})
+
+service.addEventListener('mouseover', () => {
+    service.style.color = '#F0FF02'
+    listMouseOver.innerHTML = 'Lorem Lorem Lorem Lorem'
+})
+
+service.addEventListener('mouseout', () => {
+    service.style.color = "black"
+})
+
 // ========================
-//      auto slider
+//      slider
 // ========================
 
-// let dotOne = document.getElementById('dotOne')
-// let dotTwo = document.getElementById('dotTwo')
-// let dotThree = document.getElementById('dotThree')
 let container = document.getElementById('slider')
 let image = ["assets/img/Stage-Studio.png", "assets/img/Stage-One.png", "assets/img/Stage-M.jpeg"]
 
