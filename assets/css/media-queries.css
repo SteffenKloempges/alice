@@ -1,530 +1,657 @@
 @media all and (max-width: 1440px) {
+
     /* ==========================
             Info
     ============================*/
-    .info{
-        font-size: 26px;
+    .info p {
+        font-size: 30px;
     }
+
     /* ============================
         alice one/m/studio
     =============================*/
-    .alice-one-info, .alice-m-info, .alice-studio-info{
-        padding: 20vh 5vw 10vh 3vw;
+    .alice h2 {
+        font-size: 30px;
     }
-    .alice-one-bild, .alice-one-bild-grundriss, .alice-m-bild, .alice-m-bild-grundriss, .alice-studio-bild, .alice-studio-bild-grundriss{
-        padding-top: 15vh;
-        align-items: flex-start;
+
+    .alice p {
+        font-size: 22px;
     }
 
     /* ============================
             why alice
     =============================*/
-    .whyAlice .whyAlice-headline{
+    .whyAlice .whyAlice-headline {
         padding: 10vh 10vw 8vh 3vw;
     }
-    .whyAlice article{
+
+    .whyAlice article {
         padding: 5vh 0 10vh 0;
     }
-    .whyAlice div:first-child ul{
+
+    .whyAlice div:first-child ul {
         font-size: 24px;
     }
-    .whyAlice .list-mouseover{
+
+    .whyAlice .list-mouseover {
         font-size: 24px;
     }
 
     /* ==========================
         whateverYouWant
     ============================*/
-    .whateverYouWant-headline{
+    .whateverYouWant-headline {
         padding: 10vh 0 5vh 3vw;
-    }
-    .whateverYouWant-headline p{
-        font-size: 14px;
-    }
-    .whateverYouWant-scenario{
-        padding: 5vh 0 15vh 0;
-    }
-    .whateverYouWant-scenario div p{
-        font-size: 14px;
     }
 
-    /* ==========================
-            partner
-    ============================*/
-    .partner-headline{
-        padding: 10vh 0 5vh 3vw;
+    .whateverYouWant-headline p {
+        font-size: 18px;
     }
-    .partner-headline p{
-        font-size: 14px;
+
+    .whateverYouWant-scenario {
+        padding: 5vh 0 15vh 0;
     }
-    .partner-list{
-        padding: 10vh 0 15vh 0;
+
+    .whateverYouWant-scenario div p {
+        font-size: 18px;
     }
 
     /* ==========================
             factsheet
     ============================*/
-    .factsheet div{
+    .factsheet div {
         padding: 20vh 5vw;
     }
+
+    .factsheet div p {
+        font-size: 18px;
+    }
+
+    /* ==========================
+            partner
+    ============================*/
+    .partner-headline {
+        padding: 10vh 0 5vh 3vw;
+    }
+
+    .partner-headline p {
+        font-size: 18px;
+    }
+
+    .partner-list {
+        padding: 10vh 0 15vh 0;
+    }
+
     /* ==========================
             waitingList
     ============================*/
-    .waitingList{
+    .waitingList {
         padding-top: 25vh;
     }
 }
 
-@media all and (max-width: 1200px){
+@media all and (max-width: 1200px) {
+
     /* ============================
         alice one/m/studio
     =============================*/
-    .alice-one-info, .alice-m-info, .alice-studio-info{
-        padding: 20vh 5vw 11vh 3vw;
+
+    .alice h2 {
+        font-size: 26px;
     }
-    .alice-one-info p, .alice-m-info p, .alice-studio-info p{
-        font-size: 20px;
+
+    .alice p {
+        font-size: 18px;
     }
-    .alice-one-bild, .alice-one-bild-grundriss, .alice-m-bild, .alice-m-bild-grundriss, .alice-studio-bild, .alice-studio-bild-grundriss{
-        padding-top: 15vh;
-        align-items: center;
-        width: 80%;
-    }
-    .alice-one-bild-grundriss, .alice-m-bild-grundriss, .alice-studio-bild-grundriss{
-        padding-top: 0;
-        align-items: center;
-        width: 80%;
-    }
-    .alice-one-bild img, .alice-one-bild-grundriss img, .alice-m-bild img, .alice-m-bild-grundriss img, .alice-studio-bild img, .alice-studio-bild-grundriss img{
-        width: 90%;
-    }
-        /* ==========================
+
+    /* ==========================
             waitingList
     ============================*/
-    .waitingList{
+    .waitingList {
         padding-top: 12vh;
     }
 }
 
-@media all and (max-width: 992px){
-    .info{
+@media all and (max-width: 992px) {
+    .info {
         font-size: 24px;
     }
+
     /* ============================
         alice one/m/studio
     =============================*/
-    .alice-one-info, .alice-m-info, .alice-studio-info{
+    .alice-one-info,
+    .alice-m-info,
+    .alice-studio-info {
         padding: 13vh 5vw 11vh 3vw;
     }
-    .alice-one-info p, .alice-m-info p, .alice-studio-info p{
+
+    .alice-one-info p,
+    .alice-m-info p,
+    .alice-studio-info p {
         font-size: 16px;
     }
-    .alice-one-bild, .alice-one-bild-grundriss, .alice-m-bild, .alice-m-bild-grundriss, .alice-studio-bild, .alice-studio-bild-grundriss{
+
+    .alice-one-bild,
+    .alice-one-bild-grundriss,
+    .alice-m-bild,
+    .alice-m-bild-grundriss,
+    .alice-studio-bild,
+    .alice-studio-bild-grundriss {
         padding-top: 10vh;
         align-items: center;
         width: 80%;
     }
-    .alice-one-bild-grundriss, .alice-m-bild-grundriss, .alice-studio-bild-grundriss{
+
+    .alice-one-bild-grundriss,
+    .alice-m-bild-grundriss,
+    .alice-studio-bild-grundriss {
         padding-top: 18vh;
         align-items: flex-start;
         width: 80%;
     }
-    .alice-one-bild img, .alice-one-bild-grundriss img, .alice-m-bild img, .alice-m-bild-grundriss img, .alice-studio-bild img, .alice-studio-bild-grundriss img{
+
+    .alice-one-bild img,
+    .alice-one-bild-grundriss img,
+    .alice-m-bild img,
+    .alice-m-bild-grundriss img,
+    .alice-studio-bild img,
+    .alice-studio-bild-grundriss img {
         width: 90%;
     }
+
     /* ==========================
             whyAlice
     ============================*/
-    .whyAlice .whyAlice-headline p{
+    .whyAlice .whyAlice-headline p {
         font-size: 16px;
     }
+
     .whyAlice #list-mouseover {
         font-size: 16px;
     }
+
     /* ==========================
         whateverYouWant
     ============================*/
 
-    .whateverYouWant-headline{
+    .whateverYouWant-headline {
         width: 65%;
         padding: 15vh 0 5vh 3vw;
     }
 
-    .whateverYouWant-headline p{
+    .whateverYouWant-headline p {
         width: 80%
     }
 
-    .whateverYouWant-scenario{
+    .whateverYouWant-scenario {
         gap: 60px;
-        padding:5vh 0 15vh 0;
+        padding: 5vh 0 15vh 0;
     }
 
     /* ==========================
             Slider
     ============================*/
-    .slider .waitinglist-slider p{
+    .slider .waitinglist-slider p {
         font-size: 22px;
     }
 }
-@media all and (max-width: 768px){
-    .hero-info{
+
+@media all and (max-width: 768px) {
+    .hero-info {
         flex-direction: column;
     }
-    .hero-info div{
+
+    .hero-info div {
         padding: 0;
     }
+
     /* ==========================
         Info
 ============================*/
 
-.info{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 0 10vw 0 10vw;
-    font-size: 30px;
-}
-/* ==========================
+    .info {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        padding: 0 10vw 0 10vw;
+        font-size: 30px;
+    }
+
+    /* ==========================
         Nav
 ============================*/
-    .nav ul{
-        display:none;
+    .nav ul {
+        display: none;
     }
-    .nav-mobile{
+
+    .nav-mobile {
         display: block;
     }
+
     /* ============================
         alice one/m/studio
     =============================*/
-    .alice-one-info, .alice-m-info, .alice-studio-info{
+    .alice-one-info,
+    .alice-m-info,
+    .alice-studio-info {
         padding: 5vh 5vw 11vh 3vw;
     }
-    .alice-one-info p, .alice-m-info p, .alice-studio-info p{
+
+    .alice-one-info p,
+    .alice-m-info p,
+    .alice-studio-info p {
         font-size: 16px;
     }
-    .alice-one-bild, .alice-one-bild-grundriss, .alice-m-bild, .alice-m-bild-grundriss, .alice-studio-bild, .alice-studio-bild-grundriss{
+
+    .alice-one-bild,
+    .alice-one-bild-grundriss,
+    .alice-m-bild,
+    .alice-m-bild-grundriss,
+    .alice-studio-bild,
+    .alice-studio-bild-grundriss {
         padding-top: 0;
         align-items: center;
         width: 80%;
     }
-    .alice-one-bild-grundriss, .alice-m-bild-grundriss, .alice-studio-bild-grundriss{
+
+    .alice-one-bild-grundriss,
+    .alice-m-bild-grundriss,
+    .alice-studio-bild-grundriss {
         padding-top: 18vh;
         align-items: flex-start;
         width: 80%;
     }
-    .alice-one-bild img, .alice-one-bild-grundriss img, .alice-m-bild img, .alice-m-bild-grundriss img, .alice-studio-bild img, .alice-studio-bild-grundriss img{
+
+    .alice-one-bild img,
+    .alice-one-bild-grundriss img,
+    .alice-m-bild img,
+    .alice-m-bild-grundriss img,
+    .alice-studio-bild img,
+    .alice-studio-bild-grundriss img {
         width: 90%;
     }
+
     /* ==========================
         whyAlice
 ============================*/
 
-.whyAlice .whyAlice-headline{
-    padding: 8vh 10vw 8vh 3vw;
-    width: 60%;
-}
-/* ==========================
+    .whyAlice .whyAlice-headline {
+        padding: 8vh 10vw 8vh 3vw;
+        width: 60%;
+    }
+
+    /* ==========================
         whateverYouWant
 ============================*/
-.whateverYouWant-headline{
-    padding: 8vh 0 5vh 3vw;
-    
-}
+    .whateverYouWant-headline {
+        padding: 8vh 0 5vh 3vw;
 
-.whateverYouWant-headline h2{
-    margin-bottom: 30px;
-}
+    }
 
-.whateverYouWant-scenario{
-    width: 80%;
-    margin: 0 auto;
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    padding:5vh 0 15vh 0;
-}
-/* ==========================
+    .whateverYouWant-headline h2 {
+        margin-bottom: 30px;
+    }
+
+    .whateverYouWant-scenario {
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        padding: 5vh 0 15vh 0;
+    }
+
+    /* ==========================
         Slider
 ============================*/
 
-.slider{
-    height: 50vh;
-    background: url("../img/Stage-One.png") center / contain no-repeat;
-    display:flex;
-    align-items: flex-end;
-    transition : all 1s linear;
-}
-/* ==========================
+    .slider {
+        height: 50vh;
+        background: url("../img/Stage-One.png") center / contain no-repeat;
+        display: flex;
+        align-items: flex-end;
+        transition: all 1s linear;
+    }
+
+    /* ==========================
             partner
     ============================*/
-    .partner-headline{
+    .partner-headline {
         width: 60%;
         padding: 8vh 0 5vh 3vw;
     }
-    .partner-headline p{
+
+    .partner-headline p {
         font-size: 14px;
     }
-    .partner-list{
+
+    .partner-list {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
-        padding:5vh 0 10vh 0;
+        padding: 5vh 0 10vh 0;
     }
-    .partner-list div img{
+
+    .partner-list div img {
         width: 80%;
     }
+
     /* ==========================
         factsheet
 ============================*/
 
-.factsheet{
-    flex-direction: column;
-}
-.factsheet div{
-    padding: 5vh 5vw 5vh 10vw;
-}
-.factsheet div:nth-of-type(2){
-    text-align: center;
-}
-.factsheet div img{
-    width: 50%;
-}
-/* ==========================
+    .factsheet {
+        flex-direction: column;
+    }
+
+    .factsheet div {
+        padding: 5vh 5vw 5vh 10vw;
+    }
+
+    .factsheet div:nth-of-type(2) {
+        text-align: center;
+    }
+
+    .factsheet div img {
+        width: 50%;
+    }
+
+    /* ==========================
         waitingList
 ============================*/
 
-.waitingList{
-    padding-top: 8vh;
-    flex-direction: column;
-}
-.waitingList-input p:nth-of-type(2){
-    padding-bottom: 5vh;
-}
-.waitingList-legals{
-    padding: 3vh 0;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row;
-    border-left: none;
-    border-top: 1px solid white;
-}
-.waitingList-legals h1{
-    margin-bottom: 0;
-}
-.waitingList-legals a{
-    margin-bottom: 0;
-}
-/* ==========================
+    .waitingList {
+        padding-top: 8vh;
+        flex-direction: column;
+    }
+
+    .waitingList-input p:nth-of-type(2) {
+        padding-bottom: 5vh;
+    }
+
+    .waitingList-legals {
+        padding: 3vh 0;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        border-left: none;
+        border-top: 1px solid white;
+    }
+
+    .waitingList-legals h1 {
+        margin-bottom: 0;
+    }
+
+    .waitingList-legals a {
+        margin-bottom: 0;
+    }
+
+    /* ==========================
         faq
 ============================*/
 
-.faq{
-    display: none;
-}
-/* ==========================
+    .faq {
+        display: none;
+    }
+
+    /* ==========================
         contact
 ============================*/
 
-.contact{
-    height: 50vh;
-}
+    .contact {
+        height: 50vh;
+    }
 
 }
-@media screen and (max-width: 900px){
+
+@media screen and (max-width: 900px) {
+
     /* Remove Slider Form */
-    .waitinglist-slider-form{
+    .waitinglist-slider-form {
         display: none;
     }
+
     /* ==========================
         Info
 ============================*/
 
-.info{
-    height: 80vh;
-    padding: 0 10vw;
-    font-size: 16px;
-}
-/* ==========================
+    .info {
+        height: 80vh;
+        padding: 0 10vw;
+        font-size: 16px;
+    }
+
+    /* ==========================
         Nav
 ============================*/
-.nav{
-    position:sticky;
-    top:0;
-    padding: 2vh 5vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    background: #E5E5E1;
-    z-index:9;
-}
-.nav h1{
-    font-size: 24px;
-}
-/* ==========================
+    .nav {
+        position: sticky;
+        top: 0;
+        padding: 2vh 5vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        background: #E5E5E1;
+        z-index: 9;
+    }
+
+    .nav h1 {
+        font-size: 24px;
+    }
+
+    /* ==========================
         alice one
 ============================*/
 
-/* reset all z-index */
-.alice-one, .alice-m, .alice-studio, .alice-one-grundriss, .alice-m-grundriss, .alice-studio-grundriss{
-    flex-direction: column;
-    position: static;
-    z-index: 1;
-}
+    /* reset all z-index */
+    .alice-one,
+    .alice-m,
+    .alice-studio,
+    .alice-one-grundriss,
+    .alice-m-grundriss,
+    .alice-studio-grundriss {
+        flex-direction: column;
+        position: static;
+        z-index: 1;
+    }
 
-.alice-one-info, .alice-m-info, .alice-studio-info{
-    padding: 4vh 5vw;
-    width: 100%;
-}
-.alice-one-info-grundriss, .alice-m-info-grundriss , .alice-studio-info-grundriss{
-    display:none;
-}
-.alice-one-info h2, .alice-m-info h2, .alice-studio-info h2 {
-    margin-bottom: 30px;
-    width: 50%;
-}
+    .alice-one-info,
+    .alice-m-info,
+    .alice-studio-info {
+        padding: 4vh 5vw;
+        width: 100%;
+    }
 
-.alice-one-info p, .alice-m-info p, .alice-studio-info p{
-    margin-bottom: 30px;
-    text-align: justify;
-    padding-right: 0;
-    font-size: 16px;
-}
-.alice-one-bild, .alice-one-bild-grundriss, .alice-m-bild, .alice-m-bild-grundriss, .alice-studio-bild, .alice-studio-bild-grundriss{
-    padding: 0;
-    display: block;
-    width: 100%;
-    background: #fff;
-}
-.alice-one-bild img , .alice-one-bild-grundriss img ,.alice-m-bild img, .alice-m-bild-grundriss img, .alice-studio-bild img, .alice-studio-bild-grundriss img{
-    width: 100%;
-}
-/* ==========================
+    .alice-one-info-grundriss,
+    .alice-m-info-grundriss,
+    .alice-studio-info-grundriss {
+        display: none;
+    }
+
+    .alice-one-info h2,
+    .alice-m-info h2,
+    .alice-studio-info h2 {
+        margin-bottom: 30px;
+        width: 50%;
+    }
+
+    .alice-one-info p,
+    .alice-m-info p,
+    .alice-studio-info p {
+        margin-bottom: 30px;
+        text-align: justify;
+        padding-right: 0;
+        font-size: 16px;
+    }
+
+    .alice-one-bild,
+    .alice-one-bild-grundriss,
+    .alice-m-bild,
+    .alice-m-bild-grundriss,
+    .alice-studio-bild,
+    .alice-studio-bild-grundriss {
+        padding: 0;
+        display: block;
+        width: 100%;
+        background: #fff;
+    }
+
+    .alice-one-bild img,
+    .alice-one-bild-grundriss img,
+    .alice-m-bild img,
+    .alice-m-bild-grundriss img,
+    .alice-studio-bild img,
+    .alice-studio-bild-grundriss img {
+        width: 100%;
+    }
+
+    /* ==========================
         whyAlice
 ============================*/
 
-.whyAlice .whyAlice-headline{
-    padding: 5vh 0 5vh 3vw;
-    width: 90%;
-}
-.whyAlice .whyAlice-headline h2{
-    margin-bottom: 0;
-}
+    .whyAlice .whyAlice-headline {
+        padding: 5vh 0 5vh 3vw;
+        width: 90%;
+    }
 
-.whyAlice .whyAlice-headline p{
-    font-size: 14px;
-}
+    .whyAlice .whyAlice-headline h2 {
+        margin-bottom: 0;
+    }
 
-.whyAlice article{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-}
+    .whyAlice .whyAlice-headline p {
+        font-size: 14px;
+    }
 
-.whyAlice article div{
-    width: 100%;
-}
+    .whyAlice article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
 
-.whyAlice article div:nth-of-type(2){
-    padding: 0;
-}
+    .whyAlice article div {
+        width: 100%;
+    }
 
-.whyAlice article div:nth-of-type(2) p{
-    font-size: 16px;
-}
+    .whyAlice article div:nth-of-type(2) {
+        padding: 0;
+    }
 
-.whyAlice div:first-child ul{
-    font-size: 18px;
-}
-/* ==========================
+    .whyAlice article div:nth-of-type(2) p {
+        font-size: 16px;
+    }
+
+    .whyAlice div:first-child ul {
+        font-size: 18px;
+    }
+
+    /* ==========================
         whateverYouWant
 ============================*/
-.whateverYouWant{
-    padding-bottom: 5vh;
-}
-.whateverYouWant-headline{
-    width: 90%;
-    padding: 8vh 0 5vh 3vw;
-}
-.whateverYouWant-headline p{
-    font-size: 14px;
-}
-.whateverYouWant-scenario{
-    width: 90%;
-    margin: 0;
-    grid-template-columns: 1fr;
-    gap: 0;
-    padding: 0 0 0 3vw;
-}
-.whateverYouWant-scenario div{
-    padding: 3vh 0;
-}
+    .whateverYouWant {
+        padding-bottom: 5vh;
+    }
 
-/* ==========================
+    .whateverYouWant-headline {
+        width: 90%;
+        padding: 8vh 0 5vh 3vw;
+    }
+
+    .whateverYouWant-headline p {
+        font-size: 14px;
+    }
+
+    .whateverYouWant-scenario {
+        width: 90%;
+        margin: 0;
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding: 0 0 0 3vw;
+    }
+
+    .whateverYouWant-scenario div {
+        padding: 3vh 0;
+    }
+
+    /* ==========================
         Slider
 ============================*/
 
-.slider{
-    height: 50vh;
-    background: url(../img/Stage-One.png) center / cover no-repeat;
-    display: block;
-}
-.slider .waitinglist-slider{
-    display: none;
-}
-/* ==========================
+    .slider {
+        height: 50vh;
+        background: url(../img/Stage-One.png) center / cover no-repeat;
+        display: block;
+    }
+
+    .slider .waitinglist-slider {
+        display: none;
+    }
+
+    /* ==========================
         partner
 ============================*/
-.partner-headline {
-    width: 90%;
-}
-/* ==========================
+    .partner-headline {
+        width: 90%;
+    }
+
+    /* ==========================
         factsheet
 ============================*/
-.factsheet div img{
-    width: 80%;
-}
-/* ==========================
+    .factsheet div img {
+        width: 80%;
+    }
+
+    /* ==========================
         waitingList
 ============================*/
 
-.waitingList-input p:nth-of-type(1){
-    font-size: 24px;
-}
-.waitingList-input{
-    padding: 3vh 5vw 0 5vw;
-}
-.waitingList-input form input[type="email"]{
-    width: 100%;
-    margin: 5px 0 5vh 0;
-}
-.waitingList-legals{
-    flex-direction: column;
-}
-.waitingList-legals h1{
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-.waitingList-legals a{
-    margin-bottom: 5px;
-}
-/* ==========================
+    .waitingList-input p:nth-of-type(1) {
+        font-size: 24px;
+    }
+
+    .waitingList-input {
+        padding: 3vh 5vw 0 5vw;
+    }
+
+    .waitingList-input form input[type="email"] {
+        width: 100%;
+        margin: 5px 0 5vh 0;
+    }
+
+    .waitingList-legals {
+        flex-direction: column;
+    }
+
+    .waitingList-legals h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .waitingList-legals a {
+        margin-bottom: 5px;
+    }
+
+    /* ==========================
         footer
 ============================*/
 
-footer{
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-}
-footer p{
-    padding: 10px 0;
-}
-footer ul{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-footer ul li{
-    padding: 10px 0;
-}
+    footer {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer p {
+        padding: 10px 0;
+    }
+
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer ul li {
+        padding: 10px 0;
+    }
 }
