@@ -104,6 +104,49 @@ service.addEventListener('mouseout', () => {
 })
 
 // ========================
+//      whyAlice Mobil
+// ========================
+
+let category = document.querySelectorAll('.category');
+let categoryText = document.querySelectorAll('.category-text');
+
+let hideAll = () => {
+    for (let content of categoryText) {
+        content.classList.remove('notHidden');
+    }
+}
+
+for (let boxen of category) {
+    boxen.addEventListener('click', (event) => {
+        if (event.target === category[0]) {
+            hideAll()
+            categoryText[0].classList.toggle('notHidden')
+        } else if (event.target === category[1]) {
+            hideAll()
+            categoryText[1].classList.toggle('notHidden')
+        } else if (event.target === category[2]) {
+            hideAll()
+            categoryText[2].classList.toggle('notHidden')
+        } else if (event.target === category[3]) {
+            hideAll()
+            categoryText[3].classList.toggle('notHidden')
+        } else if (event.target === category[4]) {
+            hideAll()
+            categoryText[4].classList.toggle('notHidden')
+        } else if (event.target === category[5]) {
+            hideAll()
+            categoryText[5].classList.toggle('notHidden')
+        } else if (event.target === category[6]) {
+            hideAll()
+            categoryText[6].classList.toggle('notHidden')
+        } else if (event.target === category[7]) {
+            hideAll()
+            categoryText[7].classList.toggle('notHidden')
+        }
+    })
+}
+
+// ========================
 //      slider
 // ========================
 

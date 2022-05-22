@@ -8,17 +8,6 @@
     }
 
     /* ============================
-        alice one/m/studio
-    =============================*/
-    .alice h2 {
-        font-size: 30px;
-    }
-
-    .alice p {
-        font-size: 22px;
-    }
-
-    /* ============================
             why alice
     =============================*/
     .whyAlice .whyAlice-headline {
@@ -92,18 +81,6 @@
 
 @media all and (max-width: 1200px) {
 
-    /* ============================
-        alice one/m/studio
-    =============================*/
-
-    .alice h2 {
-        font-size: 26px;
-    }
-
-    .alice p {
-        font-size: 18px;
-    }
-
     /* ==========================
             waitingList
     ============================*/
@@ -115,49 +92,6 @@
 @media all and (max-width: 992px) {
     .info {
         font-size: 24px;
-    }
-
-    /* ============================
-        alice one/m/studio
-    =============================*/
-    .alice-one-info,
-    .alice-m-info,
-    .alice-studio-info {
-        padding: 13vh 5vw 11vh 3vw;
-    }
-
-    .alice-one-info p,
-    .alice-m-info p,
-    .alice-studio-info p {
-        font-size: 16px;
-    }
-
-    .alice-one-bild,
-    .alice-one-bild-grundriss,
-    .alice-m-bild,
-    .alice-m-bild-grundriss,
-    .alice-studio-bild,
-    .alice-studio-bild-grundriss {
-        padding-top: 10vh;
-        align-items: center;
-        width: 80%;
-    }
-
-    .alice-one-bild-grundriss,
-    .alice-m-bild-grundriss,
-    .alice-studio-bild-grundriss {
-        padding-top: 18vh;
-        align-items: flex-start;
-        width: 80%;
-    }
-
-    .alice-one-bild img,
-    .alice-one-bild-grundriss img,
-    .alice-m-bild img,
-    .alice-m-bild-grundriss img,
-    .alice-studio-bild img,
-    .alice-studio-bild-grundriss img {
-        width: 90%;
     }
 
     /* ==========================
@@ -211,66 +145,15 @@
 ============================*/
 
     .info {
-        height: 100vh;
         display: flex;
         align-items: center;
         padding: 0 10vw 0 10vw;
         font-size: 30px;
     }
 
-    /* ==========================
-        Nav
-============================*/
-    .nav ul {
-        display: none;
-    }
-
-    .nav-mobile {
-        display: block;
-    }
-
     /* ============================
         alice one/m/studio
     =============================*/
-    .alice-one-info,
-    .alice-m-info,
-    .alice-studio-info {
-        padding: 5vh 5vw 11vh 3vw;
-    }
-
-    .alice-one-info p,
-    .alice-m-info p,
-    .alice-studio-info p {
-        font-size: 16px;
-    }
-
-    .alice-one-bild,
-    .alice-one-bild-grundriss,
-    .alice-m-bild,
-    .alice-m-bild-grundriss,
-    .alice-studio-bild,
-    .alice-studio-bild-grundriss {
-        padding-top: 0;
-        align-items: center;
-        width: 80%;
-    }
-
-    .alice-one-bild-grundriss,
-    .alice-m-bild-grundriss,
-    .alice-studio-bild-grundriss {
-        padding-top: 18vh;
-        align-items: flex-start;
-        width: 80%;
-    }
-
-    .alice-one-bild img,
-    .alice-one-bild-grundriss img,
-    .alice-m-bild img,
-    .alice-m-bild-grundriss img,
-    .alice-studio-bild img,
-    .alice-studio-bild-grundriss img {
-        width: 90%;
-    }
 
     /* ==========================
         whyAlice
@@ -416,93 +299,83 @@
 ============================*/
 
     .info {
-        height: 80vh;
         padding: 0 10vw;
-        font-size: 16px;
+    }
+
+    .info p {
+        font-size: 20px;
     }
 
     /* ==========================
-        Nav
-============================*/
-    .nav {
-        position: sticky;
-        top: 0;
-        padding: 2vh 5vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        background: #E5E5E1;
-        z-index: 9;
-    }
-
-    .nav h1 {
-        font-size: 24px;
-    }
-
-    /* ==========================
-        alice one
+        alice 
 ============================*/
 
-    /* reset all z-index */
-    .alice-one,
-    .alice-m,
-    .alice-studio,
-    .alice-one-grundriss,
-    .alice-m-grundriss,
-    .alice-studio-grundriss {
-        flex-direction: column;
+    .alice-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'infoOne'
+            'imgOne'
+            'grundriss1One'
+            'grundriss2One'
+            'grundriss3One'
+            'grundriss3One'
+            'grundriss4One'
+            'infoM'
+            'imgM'
+            'grundriss1M'
+            'grundriss2M'
+            'grundriss3M'
+            'grundriss3M'
+            'grundriss4M'
+            'grundriss5M'
+            'infoStudio'
+            'imgStudio'
+            'grundriss1Studio'
+            'grundriss2Studio'
+            'grundriss3Studio'
+            'grundriss3Studio'
+            'grundriss4Studio'
+            'grundriss5Studio'
+        ;
+    }
+
+    .infoOne,
+    .imgOne,
+    .grundriss1One,
+    .grundriss2One,
+    .grundriss3One,
+    .grundriss3One,
+    .grundriss4One,
+    .infoM,
+    .imgM,
+    .grundriss1M,
+    .grundriss2M,
+    .grundriss3M,
+    .grundriss3M,
+    .grundriss4M,
+    .grundriss5M,
+    .infoStudio,
+    .imgStudio,
+    .grundriss1Studio,
+    .grundriss2Studio,
+    .grundriss3Studio,
+    .grundriss3Studio,
+    .grundriss4Studio,
+    .grundriss5Studio {
         position: static;
         z-index: 1;
     }
 
-    .alice-one-info,
-    .alice-m-info,
-    .alice-studio-info {
-        padding: 4vh 5vw;
-        width: 100%;
+    .alice-info {
+        padding-left: 0;
     }
 
-    .alice-one-info-grundriss,
-    .alice-m-info-grundriss,
-    .alice-studio-info-grundriss {
-        display: none;
+    .alice-info h2 {
+        font-size: 32px;
     }
 
-    .alice-one-info h2,
-    .alice-m-info h2,
-    .alice-studio-info h2 {
-        margin-bottom: 30px;
-        width: 50%;
-    }
-
-    .alice-one-info p,
-    .alice-m-info p,
-    .alice-studio-info p {
-        margin-bottom: 30px;
-        text-align: justify;
-        padding-right: 0;
+    .alice-info p {
         font-size: 16px;
-    }
-
-    .alice-one-bild,
-    .alice-one-bild-grundriss,
-    .alice-m-bild,
-    .alice-m-bild-grundriss,
-    .alice-studio-bild,
-    .alice-studio-bild-grundriss {
-        padding: 0;
-        display: block;
-        width: 100%;
-        background: #fff;
-    }
-
-    .alice-one-bild img,
-    .alice-one-bild-grundriss img,
-    .alice-m-bild img,
-    .alice-m-bild-grundriss img,
-    .alice-studio-bild img,
-    .alice-studio-bild-grundriss img {
-        width: 100%;
     }
 
     /* ==========================
@@ -515,18 +388,19 @@
     }
 
     .whyAlice .whyAlice-headline h2 {
-        margin-bottom: 0;
+        font-size: 32px;
+        margin-bottom: 3vh;
     }
 
     .whyAlice .whyAlice-headline p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .whyAlice article {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        padding: 0;
+        align-items: left;
+        padding: 0 0 10vh 3vw;
     }
 
     .whyAlice article div {
@@ -534,16 +408,30 @@
     }
 
     .whyAlice article div:nth-of-type(2) {
-        padding: 0;
+        display: none;
     }
 
     .whyAlice article div:nth-of-type(2) p {
-        font-size: 16px;
+        display: none;
     }
 
     .whyAlice div:first-child ul {
-        font-size: 18px;
+        display: none;
     }
+
+    .whyAlice .category {
+        font-size: 24px;
+    }
+
+    .category-text {
+        margin: 3vh 0;
+        display: none;
+    }
+
+    .notHidden {
+        display: block;
+    }
+
 
     /* ==========================
         whateverYouWant
