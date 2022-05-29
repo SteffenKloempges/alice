@@ -295,6 +295,13 @@
     }
 
     /* ==========================
+        Hero
+============================*/
+    .remove {
+        display: none;
+    }
+
+    /* ==========================
         Info
 ============================*/
 
@@ -342,28 +349,31 @@
     .infoOne,
     .imgOne,
     .grundriss1One,
+    .infoM,
+    .imgM,
+    .grundriss1M,
+    .infoStudio,
+    .imgStudio,
+    .grundriss1Studio {
+        position: static;
+        z-index: 1;
+    }
+
     .grundriss2One,
     .grundriss3One,
     .grundriss3One,
     .grundriss4One,
-    .infoM,
-    .imgM,
-    .grundriss1M,
     .grundriss2M,
     .grundriss3M,
     .grundriss3M,
     .grundriss4M,
     .grundriss5M,
-    .infoStudio,
-    .imgStudio,
-    .grundriss1Studio,
     .grundriss2Studio,
     .grundriss3Studio,
     .grundriss3Studio,
     .grundriss4Studio,
     .grundriss5Studio {
-        position: static;
-        z-index: 1;
+        display: none;
     }
 
     .alice-info {
@@ -423,9 +433,12 @@
         font-size: 24px;
     }
 
+    .category {
+        display: block;
+    }
+
     .category-text {
         margin: 3vh 0;
-        display: none;
     }
 
     .notHidden {
@@ -467,13 +480,13 @@
 
     .slider {
         height: 50vh;
-        background: url(../img/Stage-One.png) center / cover no-repeat;
-        display: block;
+        background: url("../img/Stage-One.png") center / cover no-repeat;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 1s linear;
     }
 
-    .slider .waitinglist-slider {
-        display: none;
-    }
 
     /* ==========================
         partner
@@ -515,31 +528,21 @@
         margin-bottom: 20px;
     }
 
-    .waitingList-legals a {
-        margin-bottom: 5px;
+    .waitingList-legals ul {
+        text-align: center;
     }
 
     /* ==========================
         footer
 ============================*/
 
-    footer {
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-    }
-
-    footer p {
-        padding: 10px 0;
-    }
-
-    footer ul {
+    footer div {
+        width: 100%;
+        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
 
-    footer ul li {
-        padding: 10px 0;
+    footer div span {
+        display: none;
     }
 }
