@@ -6,7 +6,6 @@ let listMouseOver = document.getElementById('list-mouseover')
 let standortfreiheit = document.getElementById('standortfreiheit')
 let vorfertigung = document.getElementById('vorfertigung')
 let material = document.getElementById('material')
-let herstellung = document.getElementById('herstellung')
 let kollaborator = document.getElementById('kollaborator')
 let service = document.getElementById('service')
 
@@ -33,7 +32,7 @@ let service = document.getElementById('service')
 
 design.addEventListener('mouseover', () => {
     design.style.color = "#F500EF"
-    listMouseOver.innerHTML = 'Auch ohne Ecken und Kanten unverwechselbar. Alice ist schlicht, sympathisch und aus jedem Winkel schön.'
+    listMouseOver.innerHTML = `Alice klare Linien und ihre organische Form verbinden sich zu einem monolithischen Körper und verleihen ihr eine einzigartige Silhouette und zeitlose Ästhetik. Die Architektur und das Design von Alice ist so klar und ehrlich, dass niemand glaubt, dass es sie in Serie gibt. Alice ist Alice.`
 })
 
 design.addEventListener('mouseout', () => {
@@ -42,7 +41,7 @@ design.addEventListener('mouseout', () => {
 
 threeSixFive.addEventListener('mouseover', () => {
     threeSixFive.style.color = "#50FF00"
-    listMouseOver.innerHTML = 'Ökologisch nachhaltige Volldämmung, Dreifachverglasung und elektrische Fußbodenheizung. Alice ist auf jede Wettersituation vorbereitet und wird damit zu dem Ort, an dem sich jeder an 365 Tagen im Jahr wohl fühlt. '
+    listMouseOver.innerHTML = `Design ist nicht nur wie es aussieht, sondern wie es funktioniert. Deshalb stimmen bei Alice auch die Details. Von der elektrischen Fußbodenheizung, über die Lüftungsanlage mit Wärmerückgewinnung, der nachhaltigen Volldämmung, den akustisch optimierten Innenraum, der Dreifachverglasung bis zur Plug & Play-Unit für die Stromversorgen: Alice steht für uneingeschränkte Nutzung an 365 Tagen im Jahr.`
 })
 
 threeSixFive.addEventListener('mouseout', () => {
@@ -51,7 +50,7 @@ threeSixFive.addEventListener('mouseout', () => {
 
 standortfreiheit.addEventListener('mouseover', () => {
     standortfreiheit.style.color = "#3903E4"
-    listMouseOver.innerHTML = 'Im Garten, auf der Dachterrasse oder deinem Lieblingsort. Alice ist unkompliziert und schnell dort platzierbar, wo Du dich wohl fühlst. Und ändern sich deine Pläne, ist für Alice kein Weg zu weit. With you wherever you’re going.'
+    listMouseOver.innerHTML = `Im Garten, auf der Dachterrasse oder direkt am See: Alice steht genau da bereit, wo schöner Raum gebraucht wird. Ob dauerhaft oder temporär. Alice bleibt gerne aber ist auch jederzeit bereit, umzuziehen: unkompliziert und schnell.`
 })
 
 standortfreiheit.addEventListener('mouseout', () => {
@@ -60,7 +59,7 @@ standortfreiheit.addEventListener('mouseout', () => {
 
 vorfertigung.addEventListener('mouseover', () => {
     vorfertigung.style.color = '#F0FF02'
-    listMouseOver.innerHTML = 'Lorem lorem lorem lorem lorem lorem.'
+    listMouseOver.innerHTML = `Alice ist vollständig darauf vorbereitet, dass sie gut ankommt. Dank 100%igem Vorfertigungsansatz bleiben Fehler aus. Moderne Technologien und intelligente Prozesse garantieren die hochwertige Qualität. Alice ist durch und durch „Made in Germany“ – sogar bei schlechtem Wetter dank Fertigung in einer geschützten Werkhalle.`
 })
 
 vorfertigung.addEventListener('mouseout', () => {
@@ -69,25 +68,16 @@ vorfertigung.addEventListener('mouseout', () => {
 
 material.addEventListener('mouseover', () => {
     material.style.color = '#F500EF'
-    listMouseOver.innerHTML = 'Less is more und deshalb setzt sich Alice aus sehr wenigen Materialien zusammen, die möglichst häufig Verwendung finden und das Wertvolle im Einfachen betonen. A mindful approach: Alice besteht zu über 80% aus Holz. Dieses beziehen wir ausschließlich aus heimischen Wäldern, die nachweislich ökologisch, ökonomisch und sozial nachhaltig bewirtschaftet werden. Die Materialkomposition von Alice  ist ein sorgfältig ausgesuchtes Zusammenspiel der Naturwerkstoffe Holz, Linoleum und Wollfilz.'
+    listMouseOver.innerHTML = `Der sorgfältige Umgang mit unserer Welt und ihren Ressourcen ist für Alice existenziell. Aus diesem Grund setzt sich Alice aus wenigen Werkstoffen zusammen, die möglichst häufig Verwendung finden. Holz, Linoleum und Wollfilz. Materalien, die die Natur selbst liefert und die ausschließlich aus Deutschland stammen. Ganz einfach, sehr wertvoll.`
 })
 
 material.addEventListener('mouseout', () => {
     material.style.color = "black"
 })
 
-herstellung.addEventListener('mouseover', () => {
-    herstellung.style.color = '#50FF00'
-    listMouseOver.innerHTML = 'Alice ist Made in Germany und vom ersten bis letzten Fertigungsschritt in den besten Händen unseres inhabergeführten Partners. Dieser hebt Alice dank 100-jähriger Erfahrung, Exzellenz und modernstem Technologie-Einsatz auf ein Niveau, welches den Unterschied aus macht.'
-})
-
-herstellung.addEventListener('mouseout', () => {
-    herstellung.style.color = "black"
-})
-
 kollaborator.addEventListener('mouseover', () => {
     kollaborator.style.color = '#3903E4'
-    listMouseOver.innerHTML = 'Wir arbeiten mit den weltweit besten Herstellern zusammen, dessen Komponenten und Systeme sich nahtlos in das bestehende Design von Alice einfügen und stilistisch wie materiell auf Langlebigkeit ausgelegt sind. It´s a match. '
+    listMouseOver.innerHTML = `Die Partner von Alice zählen zu den weltweit erfolgreichsten Unternehmen in ihrer Branche. Ihre Komponenten und Systeme fügen sich nahtlos in das bestehende Design von Alice ein und sind stilistisch wie materiell auf Langlebigkeit ausgelegt. Der Zufall spielte hier keine Rolle.`
 })
 
 kollaborator.addEventListener('mouseout', () => {
@@ -96,7 +86,7 @@ kollaborator.addEventListener('mouseout', () => {
 
 service.addEventListener('mouseover', () => {
     service.style.color = '#F0FF02'
-    listMouseOver.innerHTML = 'Lorem Lorem Lorem Lorem'
+    listMouseOver.innerHTML = `Alice ist progressiv und so ist der Service. Und das schon vor der eigentlichen Bestellung. Unser Service-Team übernimmt die Prüfung der baurechtlichen Anforderungen, die Organisation des Transports und die Koordination der Aufstellung von Alice am Wunschort. Und die Anforderungen zur steuerlichen Absetzbarkeit von Alice kennt unser Service-Team ebenfalls.**`
 })
 
 service.addEventListener('mouseout', () => {

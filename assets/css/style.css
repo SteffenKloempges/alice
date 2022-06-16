@@ -417,9 +417,12 @@ nav div span:nth-of-type(2) {
         whyAlice
 ============================*/
 
+.whyAlice {
+    background-color: #e8ee7b;
+}
+
 .whyAlice .whyAlice-headline {
     padding: 10vh 10vw 8vh 3vw;
-    margin-top: 10vh;
     width: 50%;
 }
 

@@ -359,6 +359,12 @@
         z-index: 1;
     }
 
+    .imgOne,
+    .imgM,
+    .imgStudio {
+        padding-top: 5vh;
+    }
+
     .grundriss2One,
     .grundriss3One,
     .grundriss3One,
