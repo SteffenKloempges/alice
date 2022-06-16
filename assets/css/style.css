@@ -643,7 +643,14 @@ nav div span:nth-of-type(2) {
     font-weight: lighter;
     border-radius: 50px;
     padding: 10px 25px;
-    background-color: transparent;
+    background: linear-gradient(to right, #e8ee7b 50%, #ffffff 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+
+.faq article:first-of-type button:hover {
+    background-position: left bottom;
 }
 
 .faq article:first-of-type button a {
@@ -668,6 +675,10 @@ nav div span:nth-of-type(2) {
     transition: 0.4s;
 }
 
+.border {
+    border-top: 1px solid #000000;
+}
+
 .accordion:after {
     position: absolute;
     content: '\002B';
@@ -682,11 +693,17 @@ nav div span:nth-of-type(2) {
 }
 
 .panel {
+    font-size: 18px;
     padding: 0 18px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+}
+
+.panel ul {
+    list-style: none;
+    margin: 2vh 0 2vh 2%;
 }
 
 /* ==========================
