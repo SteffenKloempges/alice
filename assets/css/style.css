@@ -811,7 +811,6 @@ footer div {
     margin-bottom: 50px;
     font-size: 24px;
     display: flex;
-    width: 30%;
 }
 
 footer div span {
@@ -825,4 +824,8 @@ footer div a {
 
 footer div a:hover {
     text-decoration: underline;
+}
+
+footer p:first-of-type {
+    margin-bottom: 2vh;
 }
