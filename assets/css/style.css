@@ -91,13 +91,13 @@ h3 {
     background-color: #fff;
 }
 
-/* .sideNav__logoWrap {
+.sideNav__logoWrap {
     height: 100vh;
     display: grid;
     width: 50px;
     grid-template-rows: 1fr 0fr 1fr;
     background-color: #000;
-} */
+}
 
 .sideNav__content {
     height: 100vh;
