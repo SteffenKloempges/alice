@@ -33,13 +33,24 @@
 </head>
 
 <body>
-    <nav>
-        <div>
-            <span></span>
-            <span></span>
-            <span></span>
+    <section class="sideNav">
+        <div onclick="showBar()" class="logo_container">
+            <img src="assets/img/Logo.png" alt="Alice Logo" class="logo">
         </div>
-    </nav>
+
+        <article class="sideNav__content">
+            <!-- {/* Content here */} -->
+            <div class="link_container">
+                <a href="#alice1" class="item">Alice Modelle</a>
+                <a href="#why-alice" class="item">Why Alice ?</a>
+                <a href="#whatever" class="item">Whatever you want</a>
+                <a href="#factsheet" class="item">Factsheet</a>
+                <a href="#partner" class="item">Partner</a>
+                <a href="#FAQ" class="item">FAQ</a>
+                <a href="#newsletter" class="item">Newsletter</a>
+            </div>
+        </article>
+    </section>
     <section class="hero">
         <div class="hero-info">
             <p>Alice, deine neue Komfortzone!</p>
@@ -61,7 +72,7 @@
             oder mehr Training, für Dich oder Deine Gäste.</p>
     </section>
     <article class="alice-grid">
-        <div class="alice-info infoOne">
+        <div class="alice-info infoOne" id="alice1">
             <h2>Alice ONE</h2>
             <p>Alles Große fängt im Kleinen an: Alice ONE bietet platzsparend Raum für Ideen, die die Welt
                 verändern. Als Home-Office für ungestörte Arbeitsstunden auf dem Dach oder als Ort der Erholung
@@ -85,7 +96,7 @@
         <div class="alice-bild-grundriss grundriss4One">
             <img src="assets/img/one/ONE-Sport.svg" alt="alice-one-grundriss">
         </div>
-        <div class="alice-info infoM">
+        <div class="alice-info infoM" id="alice2">
             <h2>Alice M</h2>
             <p>Die Mitte ist golden: Alice M ist ein Raumwunder, das mit einer grandiosen Glas-Falttür und einem
                 Oberlicht die Grenzen zwischen Innen und Außen aufhebt. Hier kann man die Vorzüge von Alice ONE
@@ -112,13 +123,13 @@
         <div class="alice-bild-grundriss grundriss5M">
             <img src="assets/img/m/M-Sport.svg" alt="alice-m-grundriss">
         </div>
-        <div class="alice-info infoStudio">
+        <div class="alice-info infoStudio" id="alice3">
             <h2>Alice STUDIO</h2>
             <p>Mit Alice STUDIO erhält Größe eine neue Dimension: für ausgereiften Alltagsluxus und feinsten
-                Freizeitkomfort. Alice STUDIO bietet Lösungen de luxe für jede Lebenslage. Durch die raumhohe
-                Panorama-Tür wird Alice STUDIO nahezu eins mit der Natur. Durch die beiden Oberlichter findet bei
-                Tag das Sonnenlicht und bei Nacht das ganze Universum Einlass. So ist Alice STUDIO garantiert der
-                Raum, den Freiheit zur Entfaltung braucht.</p>
+                Freizeitkomfort. Dank der raumhohen Panorama-Tür wird Alice STUDIO nahezu eins mit der Natur. Durch die
+                beiden Oberlichter findet bei Tag das Sonnenlicht und bei Nacht das ganze Universum Einlass. So bietet
+                Alice STUDIO Lösungen de luxe für jede Lebenslage oder genau den Raum, den Freiheit zur Entfaltung
+                braucht. </p>
             <a href="#factsheet">Ab 58’900 Euro*</a>
         </div>
         <div class="alice-bild imgStudio">
@@ -140,7 +151,7 @@
             <img src="assets/img/studio/STUDIO-Sport.svg" alt="alice-studio">
         </div>
     </article>
-    <section class="whyAlice">
+    <section class="whyAlice" id="why-alice">
         <div class="whyAlice-headline" data-aos="fade-up" data-aos-duration="500">
             <h2>Why Alice ? That's why!</h2>
             <p>Alice ist viel mehr als das Zusammenspiel von minimalistischer Ästhetik, klaren Linien und
@@ -204,7 +215,7 @@
                 steuerlichen Absetzbarkeit von Alice kennt unser Service-Team ebenfalls.**</p>
         </article>
     </section>
-    <section class="whateverYouWant">
+    <section class="whateverYouWant" id="whatever">
         <div class="whateverYouWant-headline" data-aos="fade-up" data-aos-duration="500">
             <h2>Alice is whatever you want it to be</h2>
             <p>Ob als Ort für konzentriertes Arbeiten, als Übernachtungsmöglichkeit für Gäste oder als Raum für
@@ -260,7 +271,7 @@
             </a>
         </div>
     </section>
-    <section class="partner">
+    <section class="partner" id="partner">
         <div class="partner-headline" data-aos="fade-up" data-aos-duration="500">
             <h2>Partner & Kollaboratoren</h2>
             <p>Niemand erreicht etwas ohne die Hilfe anderer. Wir glauben an die Kraft der Zusammenarbeit und sind
@@ -288,11 +299,10 @@
         </div>
     </section>
     <section>
-        <section class="faq">
+        <section class="faq" id="FAQ">
             <article>
-                <h2>Du willst</h2>
-                <h2>mehr </h2>
-                <h2>wissen?</h2>
+                <h2>Du fragst, wir</h2>
+                <h2>antworten!</h2>
                 <button><a href="#factsheet">Mehr erfahren <i class="las la-arrow-right"></i></a></button>
             </article>
             <article>
@@ -308,10 +318,12 @@
 
                 <button class="accordion border">Ist Alice steuerlich absetzbar?</button>
                 <div class="panel">
-                    <p>Alice ist nicht nur der perfekte Ort für konzentriertes Arbeiten, sondern kann auch aus
-                        steuerlichen Gesichtspunkten äußerst attraktiv sein. Der Kauf selbst, die laufenden Kosten und
-                        die Einrichtung könnten unter Umständen als Betriebsausgabe oder als Werbungskosten im vollen
-                        Umfang abgesetzt werden. Wenn du umsatzsteuerpflichtig bist, kannst du dir womöglich auch die im
+                    <p>Alice ist nicht nur der perfekte Ort für konzentriertes Arbeiten, sondern der Kauf von Alice kann
+                        auch unter steuerlichen Gesichtspunkten äußerst attraktiv sein.
+
+                        Der Kauf selbst, die laufenden Kosten und die Einrichtung können unter Umständen als
+                        Betriebsausgabe oder als Werbungskosten im vollen Umfang abgesetzt werden. Wenn du
+                        umsatzsteuerpflichtig bist, kannst du dir womöglich auch die im
                         Kaufpreis enthaltene Mehrwertsteuer vom Finanzamt erstatten lassen (Vorsteuerabzug). Bespreche
                         dein Vorhaben bitte vor dem Kauf mit deiner Steuerberatung.</p>
                 </div>
@@ -332,7 +344,8 @@
                         <li>- Rundes Oberlicht (⌀ 100cm) mit Dreifachverglasung.*</li>
 
                     </ul>
-                    <p>Weitere Sonderausstattung (z. B. Oberlicht, Sonnenschutz, Innenverkleidung) ist optional
+                    <p class="pAbsatz">Weitere Sonderausstattung (z. B. Oberlicht, Sonnenschutz, Innenverkleidung) ist
+                        optional
                         erhältlich. Gerne beraten wir dich hierzu.</p>
                     * nur bei Alice M ohne Aufpreis enthalten. </p>
                 </div>
@@ -354,16 +367,35 @@
                 </div>
             </article>
         </section>
-        <section class="waitingList">
+        <section class="waitingList" id="newsletter">
             <div class="waitingList-input">
-                <p>Du möchtest mehr erfahren ?</p>
-                <form action="">
-                    <label for="">Email</label>
-                    <input type="email" name="" id="email">
-                    <input type="submit" value="Abschicken">
-                </form>
-                <p>Your e-mail address is used to send you newsletter and marketing at any time by using the unsubscribe
-                    list.</p>
+                <p>Jetzt anmelden und stets über Alice informiert sein.</p>
+                <!-- Begin Mailchimp Signup Form -->
+                <div id="mc_embed_signup">
+                    <form
+                        action="https://helloalice.us12.list-manage.com/subscribe/post?u=860a54e04eb2828d8ac30a95b&amp;id=3cc511ea9b"
+                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                        target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                            <div class="mc-field-group">
+                                <label for="mce-EMAIL">Email
+                                </label>
+                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                            </div>
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                    name="b_860a54e04eb2828d8ac30a95b_3cc511ea9b" tabindex="-1" value=""></div>
+                            <div class="clear"><input type="submit" value="Abschicken" name="subscribe"
+                                    id="mc-embedded-subscribe" class="button"></div>
+                        </div>
+                    </form>
+                </div>
+                <p>Deine Daten sind bei uns sicher und werden nicht an Dritte weitergegeben. Du kannst dich jederzeit
+                    unkompliziert von unserem Newsletter abmelden.</p>
             </div>
             <div class="waitingList-legals" data-aos="fade-up" data-aos-duration="500">
                 <h1>Alice</h1>

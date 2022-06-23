@@ -27,6 +27,7 @@ html {
 body {
     max-width: 1920px;
     margin: 0 auto;
+    position: relative;
 }
 
 *:before,
@@ -59,32 +60,67 @@ h3 {
         Nav
 ============================*/
 
-nav div {
+.sideNav {
+    width: 0;
+    position: absolute;
+    z-index: 50;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background-color: #000;
+    border-left: 1px solid #fff;
+    transition: all 1s;
+}
+
+.sideNav .logo_container {
+    transform: translate(-50%, -50%);
+    cursor: pointer;
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 50%;
+    width: 80px;
+    transition: all 1s;
+    aspect-ratio: 1/1;
+}
+
+.sideNav div img {
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 80px;
+    transition: all 1s;
+    background-color: #fff;
+}
+
+/* .sideNav__logoWrap {
+    height: 100vh;
+    display: grid;
+    width: 50px;
+    grid-template-rows: 1fr 0fr 1fr;
+    background-color: #000;
+} */
+
+.sideNav__content {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid black;
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
-    z-index: 999;
+    align-items: center;
 }
 
-nav div span {
+.link_container {
+    position: fixed;
+    margin-left: 10%;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.item {
+    font-size: 20px;
+    text-decoration: none;
+    margin: 2vh 0;
     display: block;
-    height: 3px;
-    width: 40%;
-    background-color: black;
-    margin: 0 0 10% 10%;
+    color: white;
 }
-
-nav div span:nth-of-type(2) {
-    width: 70%;
-}
-
 
 /* ==========================
         Hero
@@ -567,9 +603,14 @@ nav div span:nth-of-type(2) {
     padding: 13vh 5vw;
 }
 
-.factsheet div img {
-    width: 120%;
+.factsheet div:nth-of-type(2) {
+    margin-right: 10%;
 }
+
+.factsheet div img {
+    width: 150%;
+}
+
 
 /* ==========================
         partner
@@ -704,6 +745,10 @@ nav div span:nth-of-type(2) {
 .panel ul {
     list-style: none;
     margin: 2vh 0 2vh 2%;
+}
+
+.pAbsatz {
+    margin-bottom: 10px;
 }
 
 /* ==========================

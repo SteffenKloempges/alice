@@ -8,27 +8,32 @@ let vorfertigung = document.getElementById('vorfertigung')
 let material = document.getElementById('material')
 let kollaborator = document.getElementById('kollaborator')
 let service = document.getElementById('service')
+let sideBar = document.querySelector(".sideNav")
+let logo = document.querySelector(".logo")
+let linkContainer = document.querySelector('.link_container')
+
+// linkContainer.style.position = "fixed";
+// linkContainer.style.top = 0;
+// linkContainer.style.position = "absolute";
 
 
-// openForm.addEventListener('click', () => {
-//     document.querySelector('.waitinglist-slider-form').style.right = 0;
-//     document.querySelector('.waitinglist-slider-form').style.left = "0";
-// })
+// =====================================
+//         sideNav
+//======================================
+let toggleState = false;
 
-// closeForm.addEventListener('click', () => {
-//     document.querySelector('.waitinglist-slider-form').style.right = "-100%";
-//     document.querySelector('.waitinglist-slider-form').style.left = "100%";
-// })
+let showBar = () => {
+    toggleState = !toggleState
+    console.log(toggleState)
+    sideBar.style.width = toggleState ? "20%" : 0;
+    logo.style.transform = toggleState ? "rotate(0)" : "rotate(-360deg)";
+    linkContainer.style.opacity = toggleState ? 1 : 0;
+    linkContainer.style.width = toggleState ? "20%" : 0
+}
 
 // =====================================
 //         why alice text hover
 //======================================
-
-// #F500EF
-// #50FF00
-// #3903E4
-// #F0FF02
-
 
 design.addEventListener('mouseover', () => {
     design.style.color = "#F500EF"
