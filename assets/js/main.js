@@ -25,7 +25,7 @@ let toggleState = false;
 let showBar = () => {
     toggleState = !toggleState
     console.log(toggleState)
-    sideBar.style.width = toggleState ? "20%" : 0;
+    sideBar.style.width = toggleState ? "30%" : 0;
     logo.style.transform = toggleState ? "rotate(0)" : "rotate(-360deg)";
     linkContainer.style.opacity = toggleState ? 1 : 0;
     linkContainer.style.width = toggleState ? "20%" : 0
@@ -63,7 +63,7 @@ standortfreiheit.addEventListener('mouseout', () => {
 })
 
 vorfertigung.addEventListener('mouseover', () => {
-    vorfertigung.style.color = '#F0FF02'
+    vorfertigung.style.color = '#817bee'
     listMouseOver.innerHTML = `Alice ist vollständig darauf vorbereitet, dass sie gut ankommt. Dank 100%igem Vorfertigungsansatz bleiben Fehler aus. Moderne Technologien und intelligente Prozesse garantieren die hochwertige Qualität. Alice ist durch und durch „Made in Germany“ – sogar bei schlechtem Wetter dank Fertigung in einer geschützten Werkhalle.`
 })
 
@@ -90,7 +90,7 @@ kollaborator.addEventListener('mouseout', () => {
 })
 
 service.addEventListener('mouseover', () => {
-    service.style.color = '#F0FF02'
+    service.style.color = '#817bee'
     listMouseOver.innerHTML = `Alice ist progressiv und so ist der Service. Und das schon vor der eigentlichen Bestellung. Unser Service-Team übernimmt die Prüfung der baurechtlichen Anforderungen, die Organisation des Transports und die Koordination der Aufstellung von Alice am Wunschort. Und die Anforderungen zur steuerlichen Absetzbarkeit von Alice kennt unser Service-Team ebenfalls.**`
 })
 
@@ -184,3 +184,9 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
+
+// ===============================
+//      remove fade up in mobile
+// ===============================
+//  sometimes work, sometimes doesn't
+// console.log(window.innerWidth)

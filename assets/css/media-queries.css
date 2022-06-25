@@ -72,6 +72,18 @@
     }
 
     /* ==========================
+            FAQ
+    ============================*/
+
+    .faq article:first-of-type button {
+        width: 50%;
+    }
+
+    .accordion {
+        font-size: 22px;
+    }
+
+    /* ==========================
             waitingList
     ============================*/
     .waitingList {
@@ -79,7 +91,7 @@
     }
 }
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1180px) {
 
     /* ==========================
             waitingList
@@ -87,9 +99,22 @@
     .waitingList {
         padding-top: 12vh;
     }
+
+    .alice-info p {
+        font-size: 20px;
+    }
+
+    .whyAlice article div:nth-of-type(2) p {
+        font-size: 24px;
+    }
 }
 
 @media all and (max-width: 992px) {
+
+    .sideNav {
+        display: none;
+    }
+
     .info {
         font-size: 24px;
     }
@@ -150,10 +175,6 @@
         padding: 0 10vw 0 10vw;
         font-size: 30px;
     }
-
-    /* ============================
-        alice one/m/studio
-    =============================*/
 
     /* ==========================
         whyAlice
@@ -306,6 +327,7 @@
 ============================*/
 
     .info {
+        height: 70vh;
         padding: 0 10vw;
     }
 
@@ -317,33 +339,19 @@
         alice 
 ============================*/
 
+    .alice-info {
+        height: 80vh;
+    }
+
     .alice-grid {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            'infoOne'
-            'imgOne'
-            'grundriss1One'
-            'grundriss2One'
-            'grundriss3One'
-            'grundriss3One'
-            'grundriss4One'
-            'infoM'
-            'imgM'
-            'grundriss1M'
-            'grundriss2M'
-            'grundriss3M'
-            'grundriss3M'
-            'grundriss4M'
-            'grundriss5M'
-            'infoStudio'
-            'imgStudio'
-            'grundriss1Studio'
-            'grundriss2Studio'
-            'grundriss3Studio'
-            'grundriss3Studio'
-            'grundriss4Studio'
-            'grundriss5Studio'
-        ;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgOne,
+    .imgM,
+    .imgStudio {
+        padding-top: 5vh;
     }
 
     .infoOne,
@@ -357,12 +365,6 @@
     .grundriss1Studio {
         position: static;
         z-index: 1;
-    }
-
-    .imgOne,
-    .imgM,
-    .imgStudio {
-        padding-top: 5vh;
     }
 
     .grundriss2One,
@@ -444,6 +446,7 @@
     }
 
     .category-text {
+        font-size: 16px;
         margin: 3vh 0;
     }
 
@@ -506,6 +509,10 @@
 ============================*/
     .factsheet div img {
         width: 80%;
+    }
+
+    .factsheet div p {
+        font-size: 16px;
     }
 
     /* ==========================
