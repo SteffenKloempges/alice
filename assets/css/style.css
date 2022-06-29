@@ -3,11 +3,6 @@
     src: url('../fonts/Euclid/EuclidCircularA-Regular.otf');
 }
 
-/* @font-face {
-    font-family: "HelveticaNowTextRegular";
-    src: url('../fonts/HelveticaNowTextRegular/font.woff');
-} */
-
 /* ==========================
         General
 ============================*/
@@ -153,7 +148,6 @@ h3 {
 }
 
 .hero-text-wrapper {
-    /* width: 300px; */
     height: 100px;
     overflow: hidden;
 }
@@ -454,11 +448,12 @@ h3 {
 ============================*/
 
 .whyAlice {
+    padding-top: 5vh;
     background-color: #e8ee7b;
 }
 
 .whyAlice .whyAlice-headline {
-    padding: 10vh 10vw 8vh 3vw;
+    padding: 0 10vw 8vh 3vw;
     width: 50%;
 }
 
@@ -486,7 +481,7 @@ h3 {
 }
 
 .whyAlice article div:nth-of-type(2) p {
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .whyAlice article div:first-child ul {
@@ -554,6 +549,15 @@ h3 {
     padding-left: 15px;
     color: #3A3A3A;
 }
+
+/* Dein Backend erreichst du unter:
+https://mein.clickskeks.at
+
+Dein Login ist:
+mail@helloalice.de
+
+Dein Passwort:
+hrxGTMqx62dgK */
 
 /* ==========================
         Slider
